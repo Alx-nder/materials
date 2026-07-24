@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Material tradeoff web</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <section class="stage">
+      <div class="canvas-wrap">
+        <canvas id="radar" width="1200" height="1000" aria-label="Semiconductor property radar chart"></canvas>
+      </div>
+      <button id="download" type="button">Download PNG</button>
+    </section>
+
+    <aside class="panel">
+      <h1>Material tradeoff web</h1>
+      <p class="sub">Primary-source comparison at <strong>300&nbsp;K</strong>.</p>
+
+      <h2>Materials</h2>
+      <div id="materials" class="rows"></div>
+
+      <h2>Axes</h2>
+      <div id="axes" class="rows"></div>
+    </aside>
+  </main>
+
+  <section class="table-wrap">
+    <h2>Values and sources</h2>
+    <table id="table"></table>
+    <div id="refnotes" class="refnotes"></div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
