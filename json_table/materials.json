@@ -526,10 +526,10 @@
           ]
         },
         "breakdown_field": {
-          "value": 4.0,
+          "value": 3.3,
           "aggregation": "mean of handbook range (3-5)e6 V/cm; primary tracing pending",
           "observations": [
-            {"value": 4.0, "temperature_k": 300, "polytype": "4H", "source_range": "(3-5)e6 V/cm", "reference": "goldberg-2001"}
+            {"value": 3.3, "temperature_k": 300, "polytype": "4H", "source_range": "(3-5)e6 V/cm", "reference": "goldberg-2001"}
           ]
         },
         "electron_mobility": {
