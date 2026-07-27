@@ -130,7 +130,6 @@ button:hover { opacity: 0.88; }
   border: 1px solid var(--line);
   border-radius: 7px;
   background: #f6f6f6;
-  cursor: not-allowed;
 }
 
 .temp-field span { font-size: 14.5px; color: var(--muted); }
@@ -253,6 +252,66 @@ button:hover { opacity: 0.88; }
 
 .table-wrap { max-width: 1180px; margin: 44px auto 0; }
 .table-wrap h2 { font-size: 15px; margin-bottom: 12px; }
+
+.tabs {
+  display: flex;
+  gap: 4px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 16px;
+}
+
+.tab {
+  background: none;
+  color: var(--muted);
+  border: none;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+  padding: 9px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: -1px;
+}
+
+.tab:hover { color: var(--ink); opacity: 1; }
+
+.tab.active {
+  color: var(--ink);
+  border-bottom-color: var(--ink);
+}
+
+/* functions table */
+#panel-values, #panel-functions { overflow-x: auto; }
+
+#functions-table .fn-name {
+  vertical-align: top;
+  font-weight: 600;
+  white-space: normal;
+  width: 300px;
+}
+
+.fn-expr {
+  display: block;
+  margin-top: 5px;
+  font-family: "Cambria Math", Cambria, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--ink);
+  white-space: normal;
+}
+
+.term {
+  font-family: "Cambria Math", Cambria, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.fn-expr sub, .fn-expr sup, .term sub, .term sup { font-size: 0.72em; }
+
+#functions-table tr.first-term td { border-top: 1px solid var(--line); }
+#functions-table .term-cell { white-space: nowrap; font-size: 15px; }
+#functions-table td, #functions-table th { padding: 7px 10px; }
 
 table { border-collapse: collapse; width: 100%; font-size: 14px; }
 

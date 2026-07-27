@@ -24,6 +24,7 @@ async function init() {
 
   buildMaterialControls();
   buildAxisControls();
+  buildTabs();
   document.getElementById("download").addEventListener("click", downloadPng);
   render();
 }
@@ -276,6 +277,12 @@ function drawRadar(canvas, scale) {
     ctx.stroke();
   });
 
+  // break marker where a segmented axis jumps scale
+  axes.forEach((axisId, i) => {
+    const property = state.data.properties[axisId];
+    if (property.tick_break) drawAxisBreak(ctx, cx, cy, radius, angles[i], property.tick_break, scale);
+  });
+
   // per-axis value ticks at each ring (so plotted positions match reported values)
   ctx.fillStyle = "#9aa0a6";
   ctx.font = `${18 * scale}px Arial`;
@@ -356,6 +363,40 @@ function drawRadar(canvas, scale) {
   drawLegend(ctx, cx, height * 0.955, scale);
 }
 
+// Cuts the spoke midway between the two rings that jump, then draws the two
+// slanted strokes used to denote a broken axis.
+function drawAxisBreak(ctx, cx, cy, radius, angle, breakRing, scale) {
+  const r = radius * (breakRing + 0.5) / 5;
+  const ux = Math.cos(angle);
+  const uy = Math.sin(angle);
+  const px = -uy;
+  const py = ux;
+  const x = cx + ux * r;
+  const y = cy + uy * r;
+  const reach = 7 * scale;
+  const gap = 6 * scale;
+  const lean = 5 * scale;
+
+  ctx.save();
+  ctx.strokeStyle = "#ffffff";
+  ctx.lineWidth = 5 * scale;
+  ctx.beginPath();
+  ctx.moveTo(x - ux * gap, y - uy * gap);
+  ctx.lineTo(x + ux * gap, y + uy * gap);
+  ctx.stroke();
+
+  ctx.strokeStyle = "#9aa0a6";
+  ctx.lineWidth = 1.7 * scale;
+  ctx.lineCap = "round";
+  [-gap / 2, gap / 2].forEach(offset => {
+    ctx.beginPath();
+    ctx.moveTo(x + ux * (offset - lean / 2) - px * reach, y + uy * (offset - lean / 2) - py * reach);
+    ctx.lineTo(x + ux * (offset + lean / 2) + px * reach, y + uy * (offset + lean / 2) + py * reach);
+    ctx.stroke();
+  });
+  ctx.restore();
+}
+
 function drawLegend(ctx, cx, y, scale) {
   const items = selectedMaterials();
   if (!items.length) return;
@@ -421,10 +462,103 @@ function renderTable() {
   }).join("");
 }
 
+function mathText(text) {
+  return escapeHtml(text)
+    .replace(/_\{([^}]*)\}/g, "<sub>$1</sub>")
+    .replace(/\^\{([^}]*)\}/g, "<sup>$1</sup>")
+    .replace(/_([A-Za-z0-9])/g, "<sub>$1</sub>")
+    .replace(/\^([A-Za-z0-9])/g, "<sup>$1</sup>");
+}
+
+// Terms are written as {symbol} placeholders, or {^symbol} to raise them, so a
+// single-letter term can never be matched inside markup an earlier term produced.
+// The lookbehind keeps LaTeX-style subscripts such as v_{sat} out of the match.
+function renderExpression(expression, displays) {
+  const pattern = /(?<![_^])\{(\^?)([A-Za-z0-9_]+)\}/g;
+  let html = "";
+  let last = 0;
+  let match;
+  while ((match = pattern.exec(expression)) !== null) {
+    html += mathText(expression.slice(last, match.index));
+    const term = `<b class="term">${mathText(displays.get(match[2]) ?? match[2])}</b>`;
+    html += match[1] === "^" ? `<sup>${term}</sup>` : term;
+    last = pattern.lastIndex;
+  }
+  return html + mathText(expression.slice(last));
+}
+
+function renderFunctions() {
+  const materials = selectedMaterials();
+  const models = state.data.functions ?? {};
+
+  const rows = Object.entries(state.data.properties)
+    .filter(([axisId]) => models[axisId])
+    .map(([axisId, property]) => {
+      const model = models[axisId];
+      const displays = new Map(model.terms.map(term => [term.symbol, term.display ?? term.symbol]));
+      const expression = renderExpression(model.expression, displays);
+
+      const termRows = model.terms.map((term, index) => {
+        const cells = materials.map(material => {
+          const coefficients = material.properties[axisId]?.temperature_model?.coefficients;
+          const value = coefficients?.[term.symbol];
+          return value == null
+            ? `<td class="missing">&mdash;</td>`
+            : `<td>${formatCoefficient(value)}</td>`;
+        }).join("");
+        const label = `<td class="term-cell"><b class="term">${mathText(term.display ?? term.symbol)}</b>` +
+          `<span class="unit">${escapeHtml(term.unit || "")}</span></td>`;
+        return index === 0
+          ? `<tr class="first-term"><td rowspan="${model.terms.length}" class="fn-name">` +
+            `${escapeHtml(property.name)}<span class="fn-expr">${expression}</span></td>${label}${cells}</tr>`
+          : `<tr>${label}${cells}</tr>`;
+      }).join("");
+
+      return termRows;
+    }).join("");
+
+  const head = `<tr><th>Property</th><th>Term</th>` +
+    `${materials.map(m => `<th>${escapeHtml(m.label)}</th>`).join("")}</tr>`;
+  document.getElementById("functions-table").innerHTML =
+    `<thead>${head}</thead><tbody>${rows}</tbody>`;
+
+  document.getElementById("functions-note").innerHTML =
+    `<p>${escapeHtml(models.note ?? "")}</p>`;
+}
+
+function formatCoefficient(value) {
+  const magnitude = Math.abs(value);
+  if (value !== 0 && (magnitude >= 1e4 || magnitude < 1e-3)) {
+    const exponent = Math.floor(Math.log10(magnitude));
+    const mantissa = value / Math.pow(10, exponent);
+    return `${parseFloat(mantissa.toFixed(3))}\u00d710${superscript(exponent)}`;
+  }
+  return String(value);
+}
+
+function buildTabs() {
+  const tabs = [
+    { tab: "tab-values", panel: "panel-values" },
+    { tab: "tab-functions", panel: "panel-functions" },
+  ];
+  tabs.forEach(({ tab }) => {
+    document.getElementById(tab).addEventListener("click", () => {
+      tabs.forEach(entry => {
+        const active = entry.tab === tab;
+        const button = document.getElementById(entry.tab);
+        button.classList.toggle("active", active);
+        button.setAttribute("aria-selected", String(active));
+        document.getElementById(entry.panel).hidden = !active;
+      });
+    });
+  });
+}
+
 function render() {
   const canvas = document.getElementById("radar");
   drawRadar(canvas, canvas.width / 1200);
   renderTable();
+  renderFunctions();
 }
 
 function downloadPng() {

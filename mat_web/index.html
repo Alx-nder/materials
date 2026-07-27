@@ -21,10 +21,10 @@
 
       <h2>Temperature</h2>
       <div class="temp-field">
-        <input id="temperature" type="number" value="300" min="1" step="1" disabled aria-describedby="temp-note">
+        <input id="temperature" type="number" value="300" min="1" step="1" aria-describedby="temp-note">
         <span>K</span>
       </div>
-      <p id="temp-note" class="temp-note">* We are still extracting the coefficients for the dynamic parameters' calculation.</p>
+      <p id="temp-note" class="temp-note">* Only 300 K.We are still extracting the coefficients for the dynamic parameters' calculation.</p>
 
       <h2>Materials</h2>
       <div class="picker">
@@ -40,9 +40,20 @@
   </main>
 
   <section class="table-wrap">
-    <h2>Values and sources</h2>
-    <table id="table"></table>
-    <div id="refnotes" class="refnotes"></div>
+    <div class="tabs" role="tablist">
+      <button type="button" role="tab" id="tab-values" class="tab active" aria-selected="true" aria-controls="panel-values">Values and sources</button>
+      <button type="button" role="tab" id="tab-functions" class="tab" aria-selected="false" aria-controls="panel-functions">Functions</button>
+    </div>
+
+    <div id="panel-values" role="tabpanel" aria-labelledby="tab-values">
+      <table id="table"></table>
+      <div id="refnotes" class="refnotes"></div>
+    </div>
+
+    <div id="panel-functions" role="tabpanel" aria-labelledby="tab-functions" hidden>
+      <table id="functions-table"></table>
+      <div id="functions-note" class="refnotes"></div>
+    </div>
   </section>
 
   <script src="app.js"></script>
