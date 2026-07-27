@@ -1,6 +1,7 @@
 {
   "title": "Wide- and ultrawide-bandgap semiconductor tradeoff",
   "temperature_k": 300,
+  "default_materials": ["si", "diamond", "aln", "gan","4h-sic" ],
   "properties": {
     "band_gap": {
       "name": "Bandgap",
@@ -34,7 +35,9 @@
     "thermal_conductivity": {
       "name": "Thermal Conductivity",
       "unit": "W/cm\u00b7K",
-      "axis_max": 25,
+      "axis_max": 22,
+      "ticks": [1, 2, 3, 5, 22],
+      "tick_note": "Segmented axis: rings 1-4 resolve the 0-5 W/cm\u00b7K band where most materials sit, ring 5 jumps to 22 to accommodate diamond.",
       "scale": "linear",
       "default_axis": true
     },
@@ -223,11 +226,90 @@
       "journal": "Physical Review B",
       "year": 1970
     },
-    "goldberg-2001": {
-      "title": "Silicon Carbide (SiC) properties chapter, in Properties of Advanced Semiconductor Materials",
-      "authors": "Goldberg, Levinshtein, Rumyantsev",
-      "journal": "Wiley (Levinshtein, Rumyantsev, Shur, eds.)",
-      "year": 2001
+    "ruff-1994": {
+      "doi": "10.1109/16.293319",
+      "title": "SiC devices: physics and numerical simulation",
+      "authors": "Ruff, Mitlehner, Helbig",
+      "journal": "IEEE Transactions on Electron Devices",
+      "year": 1994
+    },
+    "schaffer-1994": {
+      "doi": "10.1557/proc-339-595",
+      "title": "Conductivity Anisotropy in Epitaxial 6H and 4H SiC",
+      "authors": "Schaffer, Negley, Irvine, Palmour",
+      "journal": "MRS Proceedings",
+      "year": 1994
+    },
+    "koizumi-2009": {
+      "doi": "10.1063/1.3158565",
+      "title": "Temperature and doping dependencies of electrical properties in Al-doped 4H-SiC epitaxial layers",
+      "authors": "Koizumi, Suda, Kimoto",
+      "journal": "Journal of Applied Physics",
+      "year": 2009
+    },
+    "raghunathan-1999": {
+      "doi": "10.1016/s0038-1101(98)00248-2",
+      "title": "Temperature dependence of hole impact ionization coefficients in 4H and 6H-SiC",
+      "authors": "Raghunathan, Baliga",
+      "journal": "Solid-State Electronics",
+      "year": 1999
+    },
+    "khan-cooper-2000": {
+      "doi": "10.1109/16.822266",
+      "title": "Measurement of high-field electron transport in silicon carbide",
+      "authors": "Khan, Cooper",
+      "journal": "IEEE Transactions on Electron Devices",
+      "year": 2000
+    },
+    "madelung-2004": {
+      "doi": "10.1007/978-3-642-18865-7",
+      "title": "Semiconductors: Data Handbook, 3rd edn",
+      "authors": "Madelung",
+      "journal": "Springer, Berlin",
+      "year": 2004,
+      "source_type": "data handbook"
+    },
+    "prince-1953": {
+      "doi": "10.1103/physrev.92.681",
+      "title": "Drift Mobilities in Semiconductors. I. Germanium",
+      "authors": "Prince",
+      "journal": "Physical Review",
+      "year": 1953
+    },
+    "sturge-1962": {
+      "doi": "10.1103/physrev.127.768",
+      "title": "Optical Absorption of Gallium Arsenide between 0.6 and 2.75 eV",
+      "authors": "Sturge",
+      "journal": "Physical Review",
+      "year": 1962
+    },
+    "blakemore-1982": {
+      "doi": "10.1063/1.331665",
+      "title": "Semiconducting and other major properties of gallium arsenide",
+      "authors": "Blakemore",
+      "journal": "Journal of Applied Physics",
+      "year": 1982
+    },
+    "carlson-1965": {
+      "doi": "10.1063/1.1714018",
+      "title": "Thermal Conductivity of GaAs and GaAs1-xPx Laser Semiconductors",
+      "authors": "Carlson, Slack, Silverman",
+      "journal": "Journal of Applied Physics",
+      "year": 1965
+    },
+    "johnson-eknoyan-1985": {
+      "doi": "10.1063/1.336115",
+      "title": "High-field electron drift velocity measurements in gallium phosphide",
+      "authors": "Johnson, Eknoyan",
+      "journal": "Journal of Applied Physics",
+      "year": 1985
+    },
+    "wu-2002": {
+      "doi": "10.1063/1.1482786",
+      "title": "Unusual properties of the fundamental band gap of InN",
+      "authors": "Wu, Walukiewicz, Yu, Ager, Haller, Lu, Schaff, Saito, Nanishi",
+      "journal": "Applied Physics Letters",
+      "year": 2002
     }
   },
   "materials": [
@@ -236,7 +318,7 @@
       "label": "GaN",
       "aliases": ["Gallium nitride"],
       "polytype": "wurtzite",
-      "color": "#d4a017",
+      "color": "#05a810",
       "properties": {
         "band_gap": {
           "value": 3.39,
@@ -295,7 +377,6 @@
       "label": "\u03b2-Ga2O3",
       "aliases": ["Beta gallium oxide"],
       "polytype": "beta",
-      "color": "#2ca02c",
       "properties": {
         "band_gap": {
           "value": 4.8,
@@ -517,54 +598,398 @@
       "aliases": ["Silicon carbide"],
       "polytype": "4H",
       "color": "#7b2fbe",
+      "traced_via": "baliga-2019",
       "properties": {
         "band_gap": {
-          "value": 3.23,
-          "aggregation": "handbook value (source NSM used); primary tracing pending",
+          "value": 3.26,
+          "aggregation": "single primary source; Baliga Fig. 2.1 lists 3.26 eV and cites refs [2-4], of which Ruff 1994 is the archival primary",
           "observations": [
-            {"value": 3.23, "temperature_k": 300, "polytype": "4H", "reference": "goldberg-2001"}
+            {"value": 3.26, "temperature_k": 300, "polytype": "4H", "method": "material parameter set used for SiC device physics/simulation", "reference": "ruff-1994"}
           ]
         },
         "breakdown_field": {
           "value": 3.3,
-          "aggregation": "mean of handbook range (3-5)e6 V/cm; primary tracing pending",
+          "aggregation": "derived at N_D = 1e16 cm^-3 from the measured hole impact-ionization coefficients of Raghunathan and Baliga; Baliga Eq. 3.23 gives E_C = 3.3e4 * N_D^(1/8) V/cm",
           "observations": [
-            {"value": 3.3, "temperature_k": 300, "polytype": "4H", "source_range": "(3-5)e6 V/cm", "reference": "goldberg-2001"}
+            {"value": 3.3, "temperature_k": 300, "polytype": "4H", "doping_cm3": 1e16, "method": "critical field from measured impact-ionization coefficients (electron-beam excitation)", "reference": "raghunathan-1999"}
           ]
         },
         "electron_mobility": {
           "value": 900,
-          "aggregation": "handbook value (source NSM used); primary tracing pending",
+          "aggregation": "single primary observation; measured Hall mobility, not the simulation-fitted 1140 of Baliga Eq. 2.27",
           "observations": [
-            {"value": 900, "temperature_k": 300, "polytype": "4H", "reference": "goldberg-2001"}
+            {"value": 900, "temperature_k": 300, "polytype": "4H", "method": "Hall effect on oriented epitaxial bars", "reference": "schaffer-1994"}
           ]
         },
         "saturation_velocity": {
-          "value": 2.0,
-          "aggregation": "handbook value (source NSM used); primary tracing pending",
+          "value": 2.2,
+          "aggregation": "single primary observation",
           "observations": [
-            {"value": 2.0, "temperature_k": 300, "polytype": "4H", "method": "electron saturation drift velocity", "reference": "goldberg-2001"}
+            {"value": 2.2, "temperature_k": 300, "polytype": "4H", "orientation": "parallel to c-axis", "method": "measured high-field electron drift velocity", "reference": "khan-cooper-2000"}
           ]
         },
         "thermal_conductivity": {
           "value": 3.7,
-          "aggregation": "handbook value (source NSM used); primary tracing pending",
+          "aggregation": "single primary source; value listed in Baliga Fig. 2.1 and traced to the SiC parameter set of Ruff 1994",
           "observations": [
-            {"value": 3.7, "unit": "W/cm\u00b7K", "temperature_k": 300, "polytype": "4H", "reference": "goldberg-2001"}
+            {"value": 3.7, "unit": "W/cm\u00b7K", "temperature_k": 300, "polytype": "4H", "reference": "ruff-1994"}
           ]
         },
         "hole_mobility": {
           "value": 120,
-          "aggregation": "handbook value (source NSM used); primary tracing pending",
+          "aggregation": "single primary observation",
           "observations": [
-            {"value": 120, "temperature_k": 300, "polytype": "4H", "reference": "goldberg-2001"}
+            {"value": 120, "temperature_k": 300, "polytype": "4H", "method": "Hall measurement on Al-doped 4H-SiC epilayers", "reference": "koizumi-2009"}
           ]
         },
         "relative_permittivity": {
           "value": 9.66,
-          "aggregation": "single primary observation (6H value used for 4H)",
+          "aggregation": "single primary observation",
           "observations": [
             {"value": 9.66, "temperature_k": 300, "polytype": "4H", "method": "static dielectric constant", "reference": "patrick-choyke-1970"}
+          ]
+        }
+      }
+    },
+    {
+      "id": "ge",
+      "label": "Ge",
+      "aliases": ["Germanium"],
+      "polytype": "diamond cubic",
+      "properties": {
+        "band_gap": {
+          "value": 0.661,
+          "aggregation": "single source (data handbook); indirect gap",
+          "observations": [
+            {"value": 0.661, "temperature_k": 300, "method": "indirect energy gap", "reference": "madelung-2004"}
+          ]
+        },
+        "breakdown_field": {
+          "value": 0.1,
+          "aggregation": "single source (data handbook)",
+          "observations": [
+            {"value": 0.1, "temperature_k": 300, "reference": "madelung-2004"}
+          ]
+        },
+        "electron_mobility": {
+          "value": 3900,
+          "aggregation": "single primary observation",
+          "observations": [
+            {"value": 3900, "temperature_k": 300, "method": "drift mobility (Haynes-Shockley)", "reference": "prince-1953"}
+          ]
+        },
+        "thermal_conductivity": {
+          "value": 0.58,
+          "aggregation": "single primary observation",
+          "observations": [
+            {"value": 0.58, "unit": "W/cm\u00b7K", "temperature_k": 300, "method": "steady-state thermal conductivity measurement", "reference": "glassbrenner-1964"}
+          ]
+        },
+        "hole_mobility": {
+          "value": 1900,
+          "aggregation": "single primary observation",
+          "observations": [
+            {"value": 1900, "temperature_k": 300, "method": "drift mobility (Haynes-Shockley)", "reference": "prince-1953"}
+          ]
+        },
+        "relative_permittivity": {
+          "value": 16.2,
+          "aggregation": "single source (data handbook)",
+          "observations": [
+            {"value": 16.2, "temperature_k": 300, "method": "static dielectric constant", "reference": "madelung-2004"}
+          ]
+        }
+      }
+    },
+    {
+      "id": "gaas",
+      "label": "GaAs",
+      "aliases": ["Gallium arsenide"],
+      "polytype": "zinc blende",
+      "properties": {
+        "band_gap": {
+          "value": 1.424,
+          "aggregation": "single primary observation; direct gap",
+          "observations": [
+            {"value": 1.424, "temperature_k": 300, "method": "optical absorption edge", "reference": "sturge-1962"}
+          ]
+        },
+        "breakdown_field": {
+          "value": 0.4,
+          "aggregation": "single source (data handbook)",
+          "observations": [
+            {"value": 0.4, "temperature_k": 300, "reference": "madelung-2004"}
+          ]
+        },
+        "electron_mobility": {
+          "value": 8500,
+          "aggregation": "single source (review of primary GaAs transport data)",
+          "observations": [
+            {"value": 8500, "temperature_k": 300, "method": "Hall/drift mobility of high-purity GaAs", "reference": "blakemore-1982"}
+          ]
+        },
+        "saturation_velocity": {
+          "value": 1.0,
+          "aggregation": "single source (review of primary GaAs transport data)",
+          "observations": [
+            {"value": 1.0, "temperature_k": 300, "method": "high-field saturated electron drift velocity", "reference": "blakemore-1982"}
+          ]
+        },
+        "thermal_conductivity": {
+          "value": 0.55,
+          "aggregation": "single primary observation",
+          "observations": [
+            {"value": 0.55, "unit": "W/cm\u00b7K", "temperature_k": 300, "method": "steady-state thermal conductivity measurement", "reference": "carlson-1965"}
+          ]
+        },
+        "hole_mobility": {
+          "value": 400,
+          "aggregation": "single source (review of primary GaAs transport data)",
+          "observations": [
+            {"value": 400, "temperature_k": 300, "reference": "blakemore-1982"}
+          ]
+        },
+        "relative_permittivity": {
+          "value": 12.9,
+          "aggregation": "single source (review of primary GaAs data)",
+          "observations": [
+            {"value": 12.9, "temperature_k": 300, "method": "static dielectric constant", "reference": "blakemore-1982"}
+          ]
+        }
+      }
+    },
+    {
+      "id": "inp",
+      "label": "InP",
+      "aliases": ["Indium phosphide"],
+      "polytype": "zinc blende",
+      "properties": {
+        "band_gap": {
+          "value": 1.344,
+          "aggregation": "single source (data handbook); direct gap",
+          "observations": [
+            {"value": 1.344, "temperature_k": 300, "reference": "madelung-2004"}
+          ]
+        },
+        "breakdown_field": {
+          "value": 0.5,
+          "aggregation": "single source (data handbook)",
+          "observations": [
+            {"value": 0.5, "temperature_k": 300, "reference": "madelung-2004"}
+          ]
+        },
+        "electron_mobility": {
+          "value": 5400,
+          "aggregation": "single source (data handbook)",
+          "observations": [
+            {"value": 5400, "temperature_k": 300, "reference": "madelung-2004"}
+          ]
+        },
+        "thermal_conductivity": {
+          "value": 0.68,
+          "aggregation": "single source (data handbook)",
+          "observations": [
+            {"value": 0.68, "unit": "W/cm\u00b7K", "temperature_k": 300, "reference": "madelung-2004"}
+          ]
+        },
+        "hole_mobility": {
+          "value": 200,
+          "aggregation": "single source (data handbook)",
+          "observations": [
+            {"value": 200, "temperature_k": 300, "reference": "madelung-2004"}
+          ]
+        },
+        "relative_permittivity": {
+          "value": 12.5,
+          "aggregation": "single source (data handbook)",
+          "observations": [
+            {"value": 12.5, "temperature_k": 300, "method": "static dielectric constant", "reference": "madelung-2004"}
+          ]
+        }
+      }
+    },
+    {
+      "id": "gap",
+      "label": "GaP",
+      "aliases": ["Gallium phosphide"],
+      "polytype": "zinc blende",
+      "properties": {
+        "band_gap": {
+          "value": 2.26,
+          "aggregation": "single source (data handbook); indirect gap",
+          "observations": [
+            {"value": 2.26, "temperature_k": 300, "reference": "madelung-2004"}
+          ]
+        },
+        "breakdown_field": {
+          "value": 1.0,
+          "aggregation": "single source (data handbook)",
+          "observations": [
+            {"value": 1.0, "temperature_k": 300, "reference": "madelung-2004"}
+          ]
+        },
+        "electron_mobility": {
+          "value": 250,
+          "aggregation": "single source (data handbook)",
+          "observations": [
+            {"value": 250, "temperature_k": 300, "reference": "madelung-2004"}
+          ]
+        },
+        "saturation_velocity": {
+          "value": 1.25,
+          "aggregation": "single primary observation",
+          "observations": [
+            {"value": 1.25, "temperature_k": 300, "method": "measured high-field electron drift velocity", "reference": "johnson-eknoyan-1985"}
+          ]
+        },
+        "thermal_conductivity": {
+          "value": 1.1,
+          "aggregation": "single source (data handbook)",
+          "observations": [
+            {"value": 1.1, "unit": "W/cm\u00b7K", "temperature_k": 300, "reference": "madelung-2004"}
+          ]
+        },
+        "hole_mobility": {
+          "value": 150,
+          "aggregation": "single source (data handbook)",
+          "observations": [
+            {"value": 150, "temperature_k": 300, "reference": "madelung-2004"}
+          ]
+        },
+        "relative_permittivity": {
+          "value": 11.1,
+          "aggregation": "single source (data handbook)",
+          "observations": [
+            {"value": 11.1, "temperature_k": 300, "method": "static dielectric constant", "reference": "madelung-2004"}
+          ]
+        }
+      }
+    },
+    {
+      "id": "inas",
+      "label": "InAs",
+      "aliases": ["Indium arsenide"],
+      "polytype": "zinc blende",
+      "properties": {
+        "band_gap": {
+          "value": 0.354,
+          "aggregation": "single source (data handbook); direct gap",
+          "observations": [
+            {"value": 0.354, "temperature_k": 300, "reference": "madelung-2004"}
+          ]
+        },
+        "breakdown_field": {
+          "value": 0.04,
+          "aggregation": "single source (data handbook)",
+          "observations": [
+            {"value": 0.04, "temperature_k": 300, "reference": "madelung-2004"}
+          ]
+        },
+        "electron_mobility": {
+          "value": 40000,
+          "aggregation": "single source (data handbook)",
+          "observations": [
+            {"value": 40000, "temperature_k": 300, "reference": "madelung-2004"}
+          ]
+        },
+        "thermal_conductivity": {
+          "value": 0.27,
+          "aggregation": "single source (data handbook)",
+          "observations": [
+            {"value": 0.27, "unit": "W/cm\u00b7K", "temperature_k": 300, "reference": "madelung-2004"}
+          ]
+        },
+        "hole_mobility": {
+          "value": 500,
+          "aggregation": "single source (data handbook)",
+          "observations": [
+            {"value": 500, "temperature_k": 300, "reference": "madelung-2004"}
+          ]
+        },
+        "relative_permittivity": {
+          "value": 15.15,
+          "aggregation": "single source (data handbook)",
+          "observations": [
+            {"value": 15.15, "temperature_k": 300, "method": "static dielectric constant", "reference": "madelung-2004"}
+          ]
+        }
+      }
+    },
+    {
+      "id": "inn",
+      "label": "InN",
+      "aliases": ["Indium nitride"],
+      "polytype": "wurtzite",
+      "properties": {
+        "band_gap": {
+          "value": 0.7,
+          "aggregation": "single primary observation; supersedes the older ~1.9 eV handbook value",
+          "observations": [
+            {"value": 0.7, "temperature_k": 300, "polytype": "wurtzite", "method": "optical absorption and photoluminescence on high-quality MBE InN", "reference": "wu-2002"}
+          ]
+        },
+        "electron_mobility": {
+          "value": 3200,
+          "aggregation": "single source (data handbook)",
+          "observations": [
+            {"value": 3200, "temperature_k": 300, "polytype": "wurtzite", "reference": "madelung-2004"}
+          ]
+        },
+        "relative_permittivity": {
+          "value": 15.3,
+          "aggregation": "single source (data handbook)",
+          "observations": [
+            {"value": 15.3, "temperature_k": 300, "polytype": "wurtzite", "method": "static dielectric constant", "reference": "madelung-2004"}
+          ]
+        }
+      }
+    },
+    {
+      "id": "c-bn",
+      "label": "c-BN",
+      "aliases": ["Cubic boron nitride", "Boron nitride"],
+      "polytype": "zinc blende",
+      "properties": {
+        "band_gap": {
+          "value": 6.4,
+          "aggregation": "single source (data handbook); indirect gap",
+          "observations": [
+            {"value": 6.4, "temperature_k": 300, "polytype": "cubic", "reference": "madelung-2004"}
+          ]
+        },
+        "breakdown_field": {
+          "value": 2.0,
+          "aggregation": "mean of handbook range (1-3)e6 V/cm for the cubic phase",
+          "observations": [
+            {"value": 2.0, "temperature_k": 300, "polytype": "cubic", "source_range": "(1-3)e6 V/cm", "reference": "madelung-2004"}
+          ]
+        },
+        "electron_mobility": {
+          "value": 200,
+          "aggregation": "single source (data handbook)",
+          "observations": [
+            {"value": 200, "temperature_k": 300, "polytype": "cubic", "reference": "madelung-2004"}
+          ]
+        },
+        "thermal_conductivity": {
+          "value": 7.4,
+          "aggregation": "single source (data handbook); measured value for the cubic phase",
+          "observations": [
+            {"value": 7.4, "unit": "W/cm\u00b7K", "temperature_k": 300, "polytype": "cubic", "reference": "madelung-2004"}
+          ]
+        },
+        "hole_mobility": {
+          "value": 500,
+          "aggregation": "single source (data handbook)",
+          "observations": [
+            {"value": 500, "temperature_k": 300, "polytype": "cubic", "reference": "madelung-2004"}
+          ]
+        },
+        "relative_permittivity": {
+          "value": 7.1,
+          "aggregation": "single source (data handbook)",
+          "observations": [
+            {"value": 7.1, "temperature_k": 300, "polytype": "cubic", "method": "static dielectric constant", "reference": "madelung-2004"}
           ]
         }
       }

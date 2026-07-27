@@ -17,10 +17,22 @@
 
     <aside class="panel">
       <h1>Material tradeoff web</h1>
-      <p class="sub">Primary-source comparison at <strong>300&nbsp;K</strong>.</p>
+      <p class="sub">Primary-source comparison.</p>
+
+      <h2>Temperature</h2>
+      <div class="temp-field">
+        <input id="temperature" type="number" value="300" min="1" step="1" disabled aria-describedby="temp-note">
+        <span>K</span>
+      </div>
+      <p id="temp-note" class="temp-note">* We are still extracting the coefficients for the dynamic parameters' calculation.</p>
 
       <h2>Materials</h2>
-      <div id="materials" class="rows"></div>
+      <div class="picker">
+        <input id="material-search" type="text" placeholder="Search materials to add&hellip;" autocomplete="off"
+               role="combobox" aria-expanded="false" aria-controls="material-options" aria-autocomplete="list">
+        <ul id="material-options" class="options" role="listbox" hidden></ul>
+      </div>
+      <ul id="material-chips" class="chips"></ul>
 
       <h2>Axes</h2>
       <div id="axes" class="rows"></div>

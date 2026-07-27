@@ -12,9 +12,14 @@ async function init() {
   state.data = await response.json();
 
   state.data.materials.forEach(material => {
-    state.materials.add(material.id);
-    state.colors[material.id] = material.color;
+    if (material.color) state.colors[material.id] = material.color;
   });
+
+  const defaults = state.data.default_materials ?? state.data.materials.map(material => material.id);
+  defaults
+    .filter(id => state.data.materials.some(material => material.id === id))
+    .forEach(id => selectMaterial(id));
+
   state.axes = Object.keys(state.data.properties).filter(id => state.data.properties[id].default_axis);
 
   buildMaterialControls();
@@ -23,26 +28,120 @@ async function init() {
   render();
 }
 
-function buildMaterialControls() {
-  const host = document.getElementById("materials");
-  host.innerHTML = state.data.materials.map(material => `
-    <label>
-      <input type="checkbox" data-material="${material.id}" checked>
-      <input type="color" data-color="${material.id}" value="${material.color}">
-      <span>${material.label}</span>
-    </label>`).join("");
+function materialById(id) {
+  return state.data.materials.find(material => material.id === id);
+}
 
-  host.querySelectorAll("[data-material]").forEach(input =>
-    input.addEventListener("change", event => {
-      const id = event.target.dataset.material;
-      event.target.checked ? state.materials.add(id) : state.materials.delete(id);
-      render();
-    }));
-  host.querySelectorAll("[data-color]").forEach(input =>
-    input.addEventListener("input", event => {
-      state.colors[event.target.dataset.color] = event.target.value;
-      render();
-    }));
+// Selection order is the draw order: first in the list sits at the back, last on top.
+function selectedMaterials() {
+  return [...state.materials].map(materialById).filter(Boolean);
+}
+
+function randomColor() {
+  const hue = Math.random() * 360;
+  const chroma = 0.52;
+  const x = chroma * (1 - Math.abs(((hue / 60) % 2) - 1));
+  const [r, g, b] =
+    hue < 60 ? [chroma, x, 0] :
+    hue < 120 ? [x, chroma, 0] :
+    hue < 180 ? [0, chroma, x] :
+    hue < 240 ? [0, x, chroma] :
+    hue < 300 ? [x, 0, chroma] : [chroma, 0, x];
+  const offset = 0.45 - chroma / 2;
+  const channel = value => Math.round((value + offset) * 255).toString(16).padStart(2, "0");
+  return `#${channel(r)}${channel(g)}${channel(b)}`;
+}
+
+// A colour is picked once, at the moment a material is added, and kept from then on.
+function selectMaterial(id) {
+  state.materials.add(id);
+  if (!state.colors[id]) state.colors[id] = randomColor();
+}
+
+function escapeHtml(text) {
+  return String(text).replace(/[&<>"']/g, character =>
+    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[character]);
+}
+
+function buildMaterialControls() {
+  const search = document.getElementById("material-search");
+  const options = document.getElementById("material-options");
+  const chips = document.getElementById("material-chips");
+
+  function closeOptions() {
+    options.hidden = true;
+    search.setAttribute("aria-expanded", "false");
+  }
+
+  function renderOptions() {
+    const query = search.value.trim().toLowerCase();
+    const available = state.data.materials.filter(material => !state.materials.has(material.id));
+    const matches = available.filter(material =>
+      [material.id, material.label, ...(material.aliases ?? [])]
+        .some(text => text.toLowerCase().includes(query)));
+
+    options.innerHTML = matches.length
+      ? matches.map(material => `
+        <li role="option" data-add="${material.id}">
+          <span>${escapeHtml(material.label)}</span>
+          <small>${escapeHtml((material.aliases ?? [])[0] ?? "")}</small>
+        </li>`).join("")
+      : `<li class="empty">${available.length ? "No match" : "All materials added"}</li>`;
+
+    options.hidden = false;
+    search.setAttribute("aria-expanded", "true");
+  }
+
+  function renderChips() {
+    chips.innerHTML = [...state.materials].map(id => {
+      const material = materialById(id);
+      return `
+        <li>
+          <input type="color" data-color="${id}" value="${state.colors[id]}" aria-label="Colour for ${escapeHtml(material.label)}">
+          <span>${escapeHtml(material.label)}</span>
+          <button type="button" data-remove="${id}" aria-label="Remove ${escapeHtml(material.label)}">&times;</button>
+        </li>`;
+    }).join("");
+  }
+
+  search.addEventListener("focus", renderOptions);
+  search.addEventListener("input", renderOptions);
+  search.addEventListener("keydown", event => {
+    if (event.key === "Escape") closeOptions();
+  });
+
+  options.addEventListener("mousedown", event => {
+    const option = event.target.closest("[data-add]");
+    if (!option) return;
+    event.preventDefault();
+    selectMaterial(option.dataset.add);
+    search.value = "";
+    renderChips();
+    renderOptions();
+    render();
+  });
+
+  chips.addEventListener("click", event => {
+    const button = event.target.closest("[data-remove]");
+    if (!button) return;
+    state.materials.delete(button.dataset.remove);
+    renderChips();
+    if (!options.hidden) renderOptions();
+    render();
+  });
+
+  chips.addEventListener("input", event => {
+    const swatch = event.target.closest("[data-color]");
+    if (!swatch) return;
+    state.colors[swatch.dataset.color] = swatch.value;
+    render();
+  });
+
+  document.addEventListener("click", event => {
+    if (!event.target.closest(".picker")) closeOptions();
+  });
+
+  renderChips();
 }
 
 function buildAxisControls() {
@@ -69,6 +168,15 @@ function propertyValue(material, axisId) {
 function normalize(axisId, value) {
   if (value == null) return null;
   const property = state.data.properties[axisId];
+  if (property.ticks) {
+    const ticks = property.ticks;
+    if (value <= 0) return 0;
+    for (let i = 0; i < ticks.length; i++) {
+      const lo = i === 0 ? 0 : ticks[i - 1];
+      if (value <= ticks[i]) return clamp((i + (value - lo) / (ticks[i] - lo)) / ticks.length);
+    }
+    return 1;
+  }
   if (property.scale === "log") {
     const min = property.axis_min ?? 1;
     const lo = Math.log10(min);
@@ -81,6 +189,7 @@ function normalize(axisId, value) {
 function clamp(x) { return Math.max(0, Math.min(1, x)); }
 
 function tickValue(property, ring) {
+  if (property.ticks) return property.ticks[ring - 1];
   if (property.scale === "log") {
     const min = property.axis_min ?? 1;
     const lo = Math.log10(min);
@@ -210,9 +319,8 @@ function drawRadar(canvas, scale) {
     });
   });
 
-  // material polygons
-  state.data.materials
-    .filter(material => state.materials.has(material.id))
+  // material polygons, drawn back to front in selection order
+  selectedMaterials()
     .forEach(material => {
       const color = state.colors[material.id];
       const points = axes.map((axisId, i) => {
@@ -249,7 +357,7 @@ function drawRadar(canvas, scale) {
 }
 
 function drawLegend(ctx, cx, y, scale) {
-  const items = state.data.materials.filter(m => state.materials.has(m.id));
+  const items = selectedMaterials();
   if (!items.length) return;
   ctx.font = `${22 * scale}px Arial`;
   ctx.textBaseline = "middle";
@@ -276,7 +384,7 @@ function hexToRgba(hex, alpha) {
 }
 
 function renderTable() {
-  const materials = state.data.materials.filter(material => state.materials.has(material.id));
+  const materials = selectedMaterials();
   const order = [];
   const refIndex = {};
   const cite = referenceId => {
@@ -302,7 +410,7 @@ function renderTable() {
   const head = `<tr><th>Property</th>${materials.map(m => `<th>${m.label}</th>`).join("")}</tr>`;
   document.getElementById("table").innerHTML = `<thead>${head}</thead><tbody>${body}</tbody>`;
 
-  document.getElementById("refnotes").innerHTML = "<h3>References (Chicago)</h3>" + order.map((referenceId, i) => {
+  document.getElementById("refnotes").innerHTML = "<h3>References</h3>" + order.map((referenceId, i) => {
     const r = state.data.references[referenceId];
     const link = r.doi ? `https://doi.org/${r.doi}` : r.url;
     const tail = link ? ` <a href="${link}" target="_blank" rel="noreferrer">${link}</a>.` : "";
