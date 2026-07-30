@@ -15,7 +15,8 @@
       "unit": "MV/cm",
       "axis_max": 20,
       "scale": "linear",
-      "default_axis": true
+      "default_axis": true,
+      "note": "Measured at N_D = 1e16 cm\u207b\u00b3. Silicon reads 0.42 here, not the textbook 0.3, because 0.3 is the same physics at N_D \u2248 1e15 cm\u207b\u00b3."
     },
     "electron_mobility": {
       "name": "Mobility",
@@ -39,6 +40,7 @@
       "ticks": [1, 2, 3, 5, 22],
       "tick_break": 4,
       "tick_note": "Segmented axis: rings 1-4 resolve the 0-5 W/cm\u00b7K band where most materials sit, ring 5 jumps to 22 to accommodate diamond.",
+      "note": "Single-axis measurement, never averaged across directions.",
       "scale": "linear",
       "default_axis": true
     },
@@ -55,7 +57,8 @@
       "unit": "",
       "axis_max": 15,
       "scale": "linear",
-      "default_axis": false
+      "default_axis": false,
+      "note": "Static (low-frequency) dielectric constant, E perpendicular c for uniaxial crystals."
     }
   },
   "functions": {
@@ -127,20 +130,6 @@
       "authors": "Maruska, Tietjen",
       "journal": "Applied Physics Letters",
       "year": 1969
-    },
-    "ilegems-1973": {
-      "doi": "10.1016/s0022-3697(73)80090-3",
-      "title": "Electrical properties of n-type vapor-grown gallium nitride",
-      "authors": "Ilegems, Montgomery",
-      "journal": "Journal of Physics and Chemistry of Solids",
-      "year": 1973
-    },
-    "sichel-1977": {
-      "doi": "10.1016/0022-3697(77)90112-3",
-      "title": "Thermal conductivity of GaN, 25-360 K",
-      "authors": "Sichel, Pankove",
-      "journal": "Journal of Physics and Chemistry of Solids",
-      "year": 1977
     },
     "barker-1973": {
       "doi": "10.1103/physrevb.7.743",
@@ -219,13 +208,6 @@
       "journal": "Czechoslovak Journal of Physics B",
       "year": 1980
     },
-    "chin-1994": {
-      "doi": "10.1063/1.356650",
-      "title": "Electron mobilities in gallium, indium, and aluminum nitrides",
-      "authors": "Chin, Tansley, Osotchan",
-      "journal": "Journal of Applied Physics",
-      "year": 1994
-    },
     "slack-1987": {
       "doi": "10.1016/0022-3697(87)90153-3",
       "title": "The intrinsic thermal conductivity of AlN",
@@ -240,12 +222,33 @@
       "journal": "Physical Review",
       "year": 1967
     },
-    "woo-2024": {
-      "doi": "10.1088/2515-7639/ad218b",
-      "title": "From wide to ultrawide-bandgap semiconductors for high power and high frequency electronic devices",
-      "authors": "Woo, Bian, Noshin, Perez Martinez, Malakoutian, Shankar, Chowdhury",
-      "journal": "Journal of Physics: Materials",
-      "year": 2024
+    "barker-2005": {
+      "doi": "10.1063/1.1854724",
+      "title": "Bulk GaN and AlGaN/GaN heterostructure drift velocity measurements and comparison to theoretical models",
+      "authors": "Barker, Ferry, Koleske, Shul",
+      "journal": "Journal of Applied Physics",
+      "year": 2005
+    },
+    "dhara-2022": {
+      "doi": "10.1063/5.0123284",
+      "title": "\u03b2-Ga2O3 Schottky barrier diodes with 4.1 MV/cm field strength by deep plasma etching field-termination",
+      "authors": "Dhara, Kalarickal, Dheenan, Joishi, Rajan",
+      "journal": "Applied Physics Letters",
+      "year": 2022
+    },
+    "hoeneisen-1971": {
+      "doi": "10.1016/0038-1101(71)90176-6",
+      "title": "Permittivity of \u03b2-Ga2O3 at low frequencies",
+      "authors": "Hoeneisen, Mead, Nicolet",
+      "journal": "Solid-State Electronics",
+      "year": 1971
+    },
+    "pomorski-2006": {
+      "doi": "10.1002/pssa.200671127",
+      "title": "Development of single-crystal CVD-diamond detectors for spectroscopy and timing",
+      "authors": "Pomorski, Berdermann, Caragheorgheopol, Ciobanu, Kis, Martemiyanov, Nebel, Moritz",
+      "journal": "physica status solidi (a)",
+      "year": 2006
     },
     "bludau-1974": {
       "doi": "10.1063/1.1663501",
@@ -350,6 +353,23 @@
       "year": 2004,
       "source_type": "data handbook"
     },
+    "levinshtein-2001": {
+      "isbn": "0-471-35827-4",
+      "title": "Properties of Advanced Semiconductor Materials: GaN, AlN, InN, BN, SiC, SiGe",
+      "authors": "Levinshtein, Rumyantsev, Shur (eds.)",
+      "journal": "Wiley-Interscience, New York",
+      "year": 2001,
+      "source_type": "edited handbook",
+      "note": "Chapter-by-chapter compilation. Used as a lead only: take its citation trail back to the measurement, do not plot a number straight out of it."
+    },
+    "ghosh-2017": {
+      "doi": "10.1063/1.4986174",
+      "title": "Ab initio velocity-field curves in monoclinic beta-Ga2O3",
+      "authors": "Ghosh, Singisetti",
+      "journal": "Journal of Applied Physics",
+      "year": 2017,
+      "source_type": "simulation"
+    },
     "macfarlane-1957": {
       "doi": "10.1103/physrev.108.1377",
       "title": "Fine Structure in the Absorption-Edge Spectrum of Ge",
@@ -440,6 +460,104 @@
       "authors": "Wu, Walukiewicz, Yu, Ager, Haller, Lu, Schaff, Saito, Nanishi",
       "journal": "Applied Physics Letters",
       "year": 2002
+    },
+    "look-sizelove-2001": {
+      "doi": "10.1063/1.1394954",
+      "title": "Predicted maximum mobility in bulk GaN",
+      "authors": "Look, Sizelove",
+      "journal": "Applied Physics Letters",
+      "year": 2001
+    },
+    "kyle-2014": {
+      "doi": "10.1063/1.4874735",
+      "title": "High-electron-mobility GaN grown on free-standing GaN templates by ammonia-based molecular beam epitaxy",
+      "authors": "Kyle, Kaun, Burke, Wu, Kaun, Speck",
+      "journal": "Journal of Applied Physics",
+      "year": 2014
+    },
+    "horita-2017": {
+      "doi": "10.7567/jjap.56.031001",
+      "title": "Hall-effect measurements of metalorganic vapor-phase epitaxy-grown p-type homoepitaxial GaN layers with various Mg concentrations",
+      "authors": "Horita, Takashima, Tanaka, Matsuyama, Ueno, Edo, Nakamura, Amano, Kachi",
+      "journal": "Japanese Journal of Applied Physics",
+      "year": 2017
+    },
+    "ji-2019": {
+      "doi": "10.1063/1.5099245",
+      "title": "Experimental determination of impact ionization coefficients of electrons and holes in gallium nitride using homojunction structures",
+      "authors": "Ji, Ercan, Chowdhury",
+      "journal": "Applied Physics Letters",
+      "year": 2019
+    },
+    "mion-2006": {
+      "doi": "10.1063/1.2335972",
+      "title": "Accurate dependence of gallium nitride thermal conductivity on dislocation density",
+      "authors": "Mion, Muth, Preble, Hanser",
+      "journal": "Applied Physics Letters",
+      "year": 2006
+    },
+    "inyushkin-2020": {
+      "doi": "10.1134/s0021364020140039",
+      "title": "High Thermal Conductivity of Bulk GaN Single Crystal: An Accurate Experimental Determination",
+      "authors": "Inyushkin, Taldenkov, Chernodubov, Voronenkov, Shreter",
+      "journal": "JETP Letters",
+      "year": 2020
+    },
+    "taniyasu-2006": {
+      "doi": "10.1063/1.2378726",
+      "title": "Increased electron mobility in n-type Si-doped AlN by reducing dislocation density",
+      "authors": "Taniyasu, Kasu, Makimoto",
+      "journal": "Applied Physics Letters",
+      "year": 2006
+    },
+    "wei-2013": {
+      "doi": "10.1063/1.4790134",
+      "title": "Thermal conductivity of 4H-SiC single crystals",
+      "authors": "Wei, Song, Yang, Cui, Peng, Xu, Hu",
+      "journal": "Journal of Applied Physics",
+      "year": 2013
+    },
+    "cassabois-2016": {
+      "doi": "10.1038/nphoton.2015.277",
+      "title": "Hexagonal boron nitride is an indirect bandgap semiconductor",
+      "authors": "Cassabois, Valvin, Gil",
+      "journal": "Nature Photonics",
+      "year": 2016
+    },
+    "hattori-2016": {
+      "doi": "10.1021/acsami.6b06425",
+      "title": "Anisotropic Dielectric Breakdown Strength of Single Crystal Hexagonal Boron Nitride",
+      "authors": "Hattori, Taniguchi, Watanabe, Nagashio",
+      "journal": "ACS Applied Materials & Interfaces",
+      "year": 2016
+    },
+    "yuan-2019": {
+      "doi": "10.1038/s42005-019-0145-5",
+      "title": "Modulating the thermal conductivity in hexagonal boron nitride via controlled boron isotope concentration",
+      "authors": "Yuan, Li, Lindsay, Cherns, Pomeroy, Liu, Edgar, Kuball",
+      "journal": "Communications Physics",
+      "year": 2019
+    },
+    "chrenko-1974": {
+      "doi": "10.1016/0038-1098(74)90978-8",
+      "title": "Ultraviolet and infrared spectra of cubic boron nitride",
+      "authors": "Chrenko",
+      "journal": "Solid State Communications",
+      "year": 1974
+    },
+    "gielisse-1967": {
+      "doi": "10.1103/physrev.155.1039",
+      "title": "Lattice Infrared Spectra of Boron Nitride and Boron Monophosphide",
+      "authors": "Gielisse, Mitra, Plendl, Griffis, Mansur, Marshall, Pascoe",
+      "journal": "Physical Review",
+      "year": 1967
+    },
+    "slack-1973": {
+      "doi": "10.1016/0022-3697(73)90092-9",
+      "title": "Nonmetallic crystals with high thermal conductivity",
+      "authors": "Slack",
+      "journal": "Journal of Physics and Chemistry of Solids",
+      "year": 1973
     }
   },
   "materials": [
@@ -458,46 +576,53 @@
           ]
         },
         "breakdown_field": {
-          "value": 3.25,
-          "aggregation": "review compilation (mean of 3-3.5 MV/cm); no older primary available",
+          "value": 2.83,
+          "aggregation": "derived at N_D = 1e16 cm^-3 from the measured Chynoweth coefficients of Ji et al.; see tools/critical_field.py",
+          "temperature_model": {
+            "coefficients": {"a0": 4.39e6, "a1": 0, "b": 1.8e7},
+            "reference": "ji-2019",
+            "source_note": "hole coefficient beta(E) measured on homoepitaxial GaN p-n diodes with avalanche capability"
+          },
           "observations": [
-            {"value": 3.25, "temperature_k": 300, "source_range": "3-3.5", "reference": "woo-2024"}
+            {"value": 2.83, "temperature_k": 300, "polytype": "wurtzite", "doping_cm3": 1e16, "method": "critical field from measured electron and hole impact-ionisation coefficients (photomultiplication on homoepitaxial p-n diodes)", "reference": "ji-2019"}
           ]
         },
         "electron_mobility": {
-          "value": 440,
-          "aggregation": "single primary observation",
+          "value": 1255,
+          "aggregation": "mean of two primary observations; same polytype and transport direction",
           "observations": [
-            {"value": 440, "temperature_k": 300, "polytype": "wurtzite", "method": "Hall effect; purest vapor-grown material (n ~ 1e17 cm^-3)", "reference": "ilegems-1973"}
+            {"value": 1245, "temperature_k": 300, "polytype": "wurtzite", "orientation": "in-plane (perpendicular to c)", "method": "Hall effect; free-standing GaN, N_D = 6.7e15 cm^-3, N_A = 1.7e15 cm^-3", "reference": "look-sizelove-2001"},
+            {"value": 1265, "temperature_k": 296, "polytype": "wurtzite", "orientation": "in-plane (perpendicular to c)", "method": "Hall effect; NH3-MBE on free-standing GaN template, dislocation density ~2e6 cm^-2", "reference": "kyle-2014"}
           ]
         },
         "saturation_velocity": {
-          "value": 1.75,
-          "aggregation": "review compilation (mean of 1.5-2.0); no older primary available",
+          "value": 2.5,
+          "aggregation": "single primary observation",
           "observations": [
-            {"value": 1.75, "temperature_k": 300, "source_range": "1.5-2.0", "reference": "woo-2024"}
+            {"value": 2.5, "temperature_k": 300, "polytype": "wurtzite", "orientation": "basal plane", "method": "pulsed four-point velocity-field measurement on n-GaN; apparent saturation at 180 kV/cm", "reference": "barker-2005"}
           ]
         },
         "thermal_conductivity": {
-          "value": 1.3,
-          "aggregation": "single primary observation",
+          "value": 2.31,
+          "aggregation": "single primary observation, perpendicular to c; Mion's cross-plane result is corroboration only, not averaged in",
           "observations": [
-            {"value": 1.3, "unit": "W/cm\u00b7K", "temperature_k": 300, "polytype": "wurtzite", "orientation": "along c-axis", "reference": "sichel-1977"}
+            {"value": 2.31, "unit": "W/cm\u00b7K", "temperature_k": 300, "polytype": "wurtzite", "orientation": "parallel to the hexagonal plane (perpendicular to c)", "method": "steady-state on a bulk single crystal; 231 \u00b1 7 W/m\u00b7K", "reference": "inyushkin-2020"},
+            {"value": 2.3, "unit": "W/cm\u00b7K", "temperature_k": 300, "polytype": "wurtzite", "orientation": "cross-plane (along c)", "method": "3-omega; HVPE GaN with dislocation density below 1e6 cm^-2", "reference": "mion-2006", "in_mean": false}
           ]
         },
         "hole_mobility": {
-          "value": 24,
-          "aggregation": "review compilation; no older primary available",
+          "value": 31,
+          "aggregation": "single primary observation",
           "observations": [
-            {"value": 24, "temperature_k": 300, "reference": "woo-2024"}
+            {"value": 31, "temperature_k": 300, "polytype": "wurtzite", "method": "Hall effect; lightly Mg-doped homoepitaxial p-GaN (N_A = 7.0e16 cm^-3)", "reference": "horita-2017"}
           ]
         },
         "relative_permittivity": {
-          "value": 9.95,
-          "aggregation": "mean of two primary orientations",
+          "value": 9.5,
+          "aggregation": "single primary observation, E perpendicular c; the E parallel c component is a separate tensor element, not averaged in",
           "observations": [
-            {"value": 10.4, "temperature_k": 300, "polytype": "wurtzite", "orientation": "E parallel c", "reference": "barker-1973"},
-            {"value": 9.5, "temperature_k": 300, "polytype": "wurtzite", "orientation": "E perpendicular c", "reference": "barker-1973"}
+            {"value": 9.5, "temperature_k": 300, "polytype": "wurtzite", "orientation": "E perpendicular c", "method": "infrared reflectivity", "reference": "barker-1973"},
+            {"value": 10.4, "temperature_k": 300, "polytype": "wurtzite", "orientation": "E parallel c", "method": "infrared reflectivity", "reference": "barker-1973", "in_mean": false}
           ]
         }
       }
@@ -516,10 +641,10 @@
           ]
         },
         "breakdown_field": {
-          "value": 9.15,
-          "aggregation": "review compilation (mean of 8-10.3 MV/cm); no older primary available",
+          "value": 4.1,
+          "aggregation": "single primary observation",
           "observations": [
-            {"value": 9.15, "temperature_k": 300, "source_range": "8-10.3", "reference": "woo-2024"}
+            {"value": 4.1, "temperature_k": 300, "polytype": "beta", "method": "measured parallel-plate field in Schottky diodes with deep-mesa field termination", "reference": "dhara-2022"}
           ]
         },
         "electron_mobility": {
@@ -530,25 +655,25 @@
           ]
         },
         "saturation_velocity": {
-          "value": 1.1,
-          "aggregation": "review compilation; no older primary available",
+          "value": 2.0,
+          "aggregation": "single simulated observation; no measured velocity-field curve traced yet",
           "observations": [
-            {"value": 1.1, "temperature_k": 300, "reference": "woo-2024"}
+            {"value": 2.0, "temperature_k": 300, "polytype": "beta", "method": "ab initio full-band Monte Carlo; reported as the peak drift velocity at 200 kV/cm, the curve saturates near this value", "reference": "ghosh-2017", "simulated": true}
           ]
         },
         "thermal_conductivity": {
-          "value": 0.19,
-          "aggregation": "mean of anisotropic primary measurements",
+          "value": 0.27,
+          "aggregation": "single primary observation, [010]; not averaged with [100]",
           "observations": [
             {"value": 0.27, "unit": "W/cm\u00b7K", "temperature_k": 300, "polytype": "beta", "orientation": "[010]", "method": "time-domain thermoreflectance", "reference": "guo-2015"},
-            {"value": 0.109, "unit": "W/cm\u00b7K", "temperature_k": 300, "polytype": "beta", "orientation": "[100]", "method": "time-domain thermoreflectance", "reference": "guo-2015"}
+            {"value": 0.109, "unit": "W/cm\u00b7K", "temperature_k": 300, "polytype": "beta", "orientation": "[100]", "method": "time-domain thermoreflectance", "reference": "guo-2015", "in_mean": false}
           ]
         },
         "relative_permittivity": {
           "value": 10,
-          "aggregation": "review compilation; no older primary available",
+          "aggregation": "single primary observation",
           "observations": [
-            {"value": 10, "temperature_k": 300, "reference": "woo-2024"}
+            {"value": 10, "temperature_k": 300, "polytype": "beta", "method": "low-frequency permittivity measurement", "reference": "hoeneisen-1971"}
           ]
         }
       }
@@ -582,10 +707,11 @@
           ]
         },
         "saturation_velocity": {
-          "value": 2.3,
-          "aggregation": "review compilation; no older primary available",
+          "value": 1.9,
+          "aggregation": "single primary observation, electrons; the measured hole value is 1.4",
           "observations": [
-            {"value": 2.3, "temperature_k": 300, "reference": "woo-2024"}
+            {"value": 1.9, "temperature_k": 300, "polytype": "diamond cubic", "method": "transient-current technique with alpha-particle excitation; single-crystal CVD diamond", "reference": "pomorski-2006"},
+            {"value": 1.4, "temperature_k": 300, "polytype": "diamond cubic", "carrier": "holes", "method": "transient-current technique with alpha-particle excitation; single-crystal CVD diamond", "reference": "pomorski-2006", "in_mean": false}
           ]
         },
         "thermal_conductivity": {
@@ -601,13 +727,6 @@
           "observations": [
             {"value": 3800, "temperature_k": 300, "polytype": "diamond cubic", "method": "time-of-flight; high-purity single-crystal CVD", "reference": "isberg-2002"}
           ]
-        },
-        "relative_permittivity": {
-          "value": 5.7,
-          "aggregation": "review compilation; no older primary available",
-          "observations": [
-            {"value": 5.7, "temperature_k": 300, "reference": "woo-2024"}
-          ]
         }
       }
     },
@@ -620,39 +739,25 @@
       "properties": {
         "band_gap": {
           "value": 6.169,
-          "aggregation": "arithmetic mean of three primary observations",
+          "aggregation": "mean of three primary observations; all wurtzite. Caveat: the AlN edge is polarisation dependent and the polarisation is not pinned down for all three.",
           "observations": [
             {"value": 6.026, "temperature_k": 300, "polytype": "wurtzite", "method": "temperature dependence of band gap", "reference": "guo-1994"},
             {"value": 6.2, "temperature_k": 300, "polytype": "wurtzite", "method": "absorption with excitonic contribution", "reference": "yamashita-1979"},
             {"value": 6.28, "temperature_k": 300, "polytype": "wurtzite", "method": "excitonic edge; 75 meV binding energy assumed", "reference": "roskovcova-1980"}
           ]
         },
-        "breakdown_field": {
-          "value": 15.4,
-          "aggregation": "review compilation",
-          "observations": [
-            {"value": 15.4, "temperature_k": 300, "reference": "woo-2024"}
-          ]
-        },
         "electron_mobility": {
-          "value": 300,
-          "aggregation": "single primary observation",
+          "value": 426,
+          "aggregation": "single primary observation; highest measured room-temperature value for AlN",
           "observations": [
-            {"value": 300, "temperature_k": 300, "polytype": "wurtzite", "method": "iterative solution of the Boltzmann transport equation", "reference": "chin-1994"}
-          ]
-        },
-        "saturation_velocity": {
-          "value": 1.3,
-          "aggregation": "review compilation",
-          "observations": [
-            {"value": 1.3, "temperature_k": 300, "reference": "woo-2024"}
+            {"value": 426, "temperature_k": 300, "polytype": "wurtzite", "method": "Hall effect; Si-doped AlN, N_Si = 3e17 cm^-3, reduced dislocation density", "reference": "taniyasu-2006"}
           ]
         },
         "thermal_conductivity": {
           "value": 2.85,
-          "aggregation": "single primary observation",
+          "aggregation": "single primary observation; crystal direction not recorded, needs to be read off the paper",
           "observations": [
-            {"value": 2.85, "unit": "W/cm\u00b7K", "temperature_k": 300, "polytype": "wurtzite", "method": "high-purity single crystal", "reference": "slack-1987"}
+            {"value": 2.85, "unit": "W/cm\u00b7K", "temperature_k": 300, "polytype": "wurtzite", "orientation": "not specified", "method": "high-purity single crystal", "reference": "slack-1987"}
           ]
         },
         "relative_permittivity": {
@@ -679,15 +784,15 @@
           ]
         },
         "breakdown_field": {
-          "value": 0.3,
-          "aggregation": "single primary observation (~3e5 V/cm)",
+          "value": 0.42,
+          "aggregation": "derived at N_D = 1e16 cm^-3 from Van Overstraeten's measured coefficients; same basis as GaN and 4H-SiC",
           "temperature_model": {
             "coefficients": {"a0": 1.6e6, "a1": 0, "b": 2.0e6},
             "reference": "vanoverstraeten-1970",
             "source_note": ""
           },
           "observations": [
-            {"value": 0.3, "temperature_k": 300, "method": "from measured avalanche ionization rates in Si p-n junctions", "reference": "vanoverstraeten-1970"}
+            {"value": 0.42, "temperature_k": 300, "doping_cm3": 1e16, "method": "critical field from measured avalanche ionization rates in Si p-n junctions", "reference": "vanoverstraeten-1970"}
           ]
         },
         "electron_mobility": {
@@ -715,10 +820,10 @@
           ]
         },
         "thermal_conductivity": {
-          "value": 1.3,
-          "aggregation": "single primary observation",
+          "value": 1.5,
+          "aggregation": "single primary observation; the 1.3 previously stored here came from a secondary compilation",
           "observations": [
-            {"value": 1.3, "unit": "W/cm\u00b7K", "temperature_k": 300, "reference": "glassbrenner-1964"}
+            {"value": 1.5, "unit": "W/cm\u00b7K", "temperature_k": 300, "method": "steady-state longitudinal heat flow, single crystal", "reference": "glassbrenner-1964"}
           ]
         },
         "hole_mobility": {
@@ -752,14 +857,14 @@
       "properties": {
         "band_gap": {
           "value": 3.26,
-          "aggregation": "single primary source;",
+          "aggregation": "still backed only by a device-simulation parameter set; needs a measured replacement",
           "observations": [
             {"value": 3.26, "temperature_k": 300, "polytype": "4H", "method": "material parameter set used for SiC device physics/simulation", "reference": "ruff-1994"}
           ]
         },
         "breakdown_field": {
           "value": 3.3,
-          "aggregation": "derived at N_D = 1e16 cm^-3 from the measured hole impact-ionization coefficients of Raghunathan and Baliga; Baliga Eq. 3.23 gives E_C = 3.3e4 * N_D^(1/8) V/cm",
+          "aggregation": "derived at N_D = 1e16 cm^-3 from the measured hole impact-ionization coefficients of Raghunathan and Baliga",
           "temperature_model": {
             "coefficients": {"a0": 6.46e6, "a1": -1.07e4, "b": 1.75e7},
             "reference": "raghunathan-1999",
@@ -771,14 +876,14 @@
         },
         "electron_mobility": {
           "value": 900,
-          "aggregation": "single primary observation; measured Hall mobility",
+          "aggregation": "single primary observation; measured Hall mobility. Caveat: Schaffer's paper is about conductivity anisotropy and our record does not say which direction the 900 belongs to.",
           "temperature_model": {
             "coefficients": {"mu0": 1140, "n": 2.70},
             "reference": "wright-1998",
             "source_note": ""
           },
           "observations": [
-            {"value": 900, "temperature_k": 300, "polytype": "4H", "method": "Hall effect on oriented epitaxial bars", "reference": "schaffer-1994"}
+            {"value": 900, "temperature_k": 300, "polytype": "4H", "orientation": "not specified", "method": "Hall effect on oriented epitaxial bars", "reference": "schaffer-1994"}
           ]
         },
         "saturation_velocity": {
@@ -789,10 +894,11 @@
           ]
         },
         "thermal_conductivity": {
-          "value": 3.7,
-          "aggregation": "single primary source; value listed in Baliga Fig. 2.1 and traced to the SiC parameter set of Ruff 1994",
+          "value": 2.8,
+          "aggregation": "single primary observation, N-type device-grade material; the V-doped semi-insulating crystal from the same paper is not averaged in",
           "observations": [
-            {"value": 3.7, "unit": "W/cm\u00b7K", "temperature_k": 300, "polytype": "4H", "reference": "ruff-1994"}
+            {"value": 2.8, "unit": "W/cm\u00b7K", "temperature_k": 300, "polytype": "4H", "orientation": "normal to c-axis", "method": "laser-flash thermal diffusivity x specific heat; N-type single crystal", "reference": "wei-2013"},
+            {"value": 3.47, "unit": "W/cm\u00b7K", "temperature_k": 300, "polytype": "4H", "orientation": "normal to c-axis", "method": "laser-flash thermal diffusivity x specific heat; V-doped semi-insulating single crystal", "reference": "wei-2013", "in_mean": false}
           ]
         },
         "hole_mobility": {
@@ -1128,49 +1234,60 @@
     {
       "id": "c-bn",
       "label": "c-BN",
-      "aliases": ["Cubic boron nitride", "Boron nitride"],
+      "aliases": ["Cubic boron nitride", "Zinc-blende boron nitride"],
       "polytype": "zinc blende",
+      "traced_via": "levinshtein-2001",
       "properties": {
         "band_gap": {
           "value": 6.4,
-          "aggregation": "single source (data handbook); indirect gap",
+          "aggregation": "single primary observation; indirect gap",
           "observations": [
-            {"value": 6.4, "temperature_k": 300, "polytype": "cubic", "reference": "madelung-2004"}
-          ]
-        },
-        "breakdown_field": {
-          "value": 2.0,
-          "aggregation": "mean of handbook range (1-3)e6 V/cm for the cubic phase",
-          "observations": [
-            {"value": 2.0, "temperature_k": 300, "polytype": "cubic", "source_range": "(1-3)e6 V/cm", "reference": "madelung-2004"}
-          ]
-        },
-        "electron_mobility": {
-          "value": 200,
-          "aggregation": "single source (data handbook)",
-          "observations": [
-            {"value": 200, "temperature_k": 300, "polytype": "cubic", "reference": "madelung-2004"}
+            {"value": 6.4, "temperature_k": 300, "polytype": "cubic", "method": "ultraviolet absorption edge on synthetic c-BN crystals", "reference": "chrenko-1974"}
           ]
         },
         "thermal_conductivity": {
           "value": 7.4,
-          "aggregation": "single source (data handbook); measured value for the cubic phase",
+          "aggregation": "single primary observation",
           "observations": [
-            {"value": 7.4, "unit": "W/cm\u00b7K", "temperature_k": 300, "polytype": "cubic", "reference": "madelung-2004"}
-          ]
-        },
-        "hole_mobility": {
-          "value": 500,
-          "aggregation": "single source (data handbook)",
-          "observations": [
-            {"value": 500, "temperature_k": 300, "polytype": "cubic", "reference": "madelung-2004"}
+            {"value": 7.4, "unit": "W/cm\u00b7K", "temperature_k": 300, "polytype": "cubic", "method": "steady-state thermal conductivity of high-thermal-conductivity nonmetallic crystals", "reference": "slack-1973"}
           ]
         },
         "relative_permittivity": {
           "value": 7.1,
-          "aggregation": "single source (data handbook)",
+          "aggregation": "single primary observation",
           "observations": [
-            {"value": 7.1, "temperature_k": 300, "polytype": "cubic", "method": "static dielectric constant", "reference": "madelung-2004"}
+            {"value": 7.1, "temperature_k": 300, "polytype": "cubic", "method": "static dielectric constant from lattice infrared reflectivity", "reference": "gielisse-1967"}
+          ]
+        }
+      }
+    },
+    {
+      "id": "h-bn",
+      "label": "h-BN",
+      "aliases": ["Hexagonal boron nitride", "Boron nitride"],
+      "polytype": "hexagonal",
+      "traced_via": "levinshtein-2001",
+      "properties": {
+        "band_gap": {
+          "value": 5.955,
+          "aggregation": "single primary observation; indirect gap",
+          "observations": [
+            {"value": 5.955, "temperature_k": 300, "polytype": "hexagonal", "method": "optical spectroscopy of phonon-assisted transitions in high-purity single crystals", "reference": "cassabois-2016"}
+          ]
+        },
+        "breakdown_field": {
+          "value": 12.0,
+          "aggregation": "single primary observation, E parallel c; the perpendicular direction differs by 4x and is not averaged in",
+          "observations": [
+            {"value": 12.0, "temperature_k": 300, "polytype": "hexagonal", "orientation": "E parallel to c", "method": "dielectric breakdown of single-crystal h-BN under controlled humidity", "reference": "hattori-2016"},
+            {"value": 3.0, "temperature_k": 300, "polytype": "hexagonal", "orientation": "E normal to c", "method": "dielectric breakdown of single-crystal h-BN under controlled humidity", "reference": "hattori-2016", "in_mean": false}
+          ]
+        },
+        "thermal_conductivity": {
+          "value": 3.25,
+          "aggregation": "single primary observation, in-plane, isotopically disordered material",
+          "observations": [
+            {"value": 3.25, "unit": "W/cm\u00b7K", "temperature_k": 300, "polytype": "hexagonal", "orientation": "in-plane", "method": "time-domain thermoreflectance; isotopically disordered h-BN (10B:11B = 52:48), from the 585 W/m\u00b7K monoisotopic value and the stated ~80% enhancement", "reference": "yuan-2019"}
           ]
         }
       }

@@ -348,15 +348,29 @@ function drawRadar(canvas, scale) {
         ctx.fill();
         ctx.stroke();
       } else {
-        // draw only across consecutive available vertices
+        // Rotate so drawing starts on a gap; runs that wrap past the last axis
+        // are then contiguous and get stroked like any other run.
+        const gap = points.findIndex(p => !p);
+        const ordered = points.slice(gap).concat(points.slice(0, gap));
         ctx.beginPath();
         let started = false;
-        points.forEach(p => {
+        ordered.forEach(p => {
           if (!p) { started = false; return; }
           started ? ctx.lineTo(p.x, p.y) : ctx.moveTo(p.x, p.y);
           started = true;
         });
         ctx.stroke();
+        // a vertex with no available neighbour would otherwise draw nothing at all
+        ctx.fillStyle = color;
+        points.forEach((p, i) => {
+          if (!p) return;
+          const prev = points[(i - 1 + points.length) % points.length];
+          const next = points[(i + 1) % points.length];
+          if (prev || next) return;
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, 5 * scale, 0, Math.PI * 2);
+          ctx.fill();
+        });
       }
     });
 
@@ -424,10 +438,21 @@ function hexToRgba(hex, alpha) {
   return `rgba(${r}, ${g}, ${b}, ${alpha})`;
 }
 
+function axisNote(property) {
+  return [property.note, property.tick_note].filter(Boolean).join(" ");
+}
+
+// An observation is "simulated" when the number comes out of a calculation
+// (Monte Carlo, first principles) rather than a measurement on a real crystal.
+function isSimulated(observation) {
+  return observation.simulated === true;
+}
+
 function renderTable() {
   const materials = selectedMaterials();
   const order = [];
   const refIndex = {};
+  let anySimulated = false;
   const cite = referenceId => {
     if (!(referenceId in refIndex)) { refIndex[referenceId] = order.length + 1; order.push(referenceId); }
     const n = refIndex[referenceId];
@@ -443,18 +468,35 @@ function renderTable() {
       const entry = material.properties[axisId];
       if (!entry || typeof entry.value !== "number") return `<td class="missing">&mdash;</td>`;
       const refs = [...new Set(entry.observations.map(o => o.reference))].map(cite).join("");
-      return `<td>${entry.value}${refs}</td>`;
+      const simulated = entry.observations.filter(o => o.in_mean !== false).some(isSimulated);
+      if (simulated) anySimulated = true;
+      const star = simulated ? `<span class="simmark" title="From simulation, not measurement">*</span>` : "";
+      return `<td>${entry.value}${star}${refs}</td>`;
     }).join("");
-    return `<tr><td>${property.name}<span class="unit">${property.unit || ""}</span></td>${cells}</tr>`;
+    const mark = axisNote(property) ? ` <span class="notemark">&dagger;</span>` : "";
+    return `<tr><td>${property.name}${mark}<span class="unit">${property.unit || ""}</span></td>${cells}</tr>`;
   }).join("");
 
   const head = `<tr><th>Property</th>${materials.map(m => `<th>${m.label}</th>`).join("")}</tr>`;
   document.getElementById("table").innerHTML = `<thead>${head}</thead><tbody>${body}</tbody>`;
 
+  const notes = Object.values(state.data.properties)
+    .filter(axisNote)
+    .map(property => `<p><span class="notemark">&dagger;</span> <b>${property.name}.</b> ${escapeHtml(axisNote(property))}</p>`)
+    .join("");
+  const simNote = anySimulated
+    ? `<p><span class="simmark">*</span> <b>Simulated value.</b> Calculated (Monte Carlo or first principles), ` +
+      `not measured on a crystal. Used only where no primary measurement could be traced.</p>`
+    : "";
+  document.getElementById("axisnotes").innerHTML =
+    notes || simNote ? `<h3>How to read these numbers</h3>${notes}${simNote}` : "";
+
   document.getElementById("refnotes").innerHTML = "<h3>References</h3>" + order.map((referenceId, i) => {
     const r = state.data.references[referenceId];
     const link = r.doi ? `https://doi.org/${r.doi}` : r.url;
-    const tail = link ? ` <a href="${link}" target="_blank" rel="noreferrer">${link}</a>.` : "";
+    const tail = link
+      ? ` <a href="${link}" target="_blank" rel="noreferrer">${link}</a>.`
+      : r.isbn ? ` ISBN ${escapeHtml(r.isbn)}.` : "";
     const cited = r.doi || r.url
       ? `${r.authors}. &ldquo;${r.title}.&rdquo; <i>${r.journal}</i> (${r.year}).`
       : `${r.authors}. <i>${r.title}</i>. ${r.journal}, ${r.year}.`;
