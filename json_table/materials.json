@@ -1,7 +1,7 @@
 {
   "title": "Wide- and ultrawide-bandgap semiconductor tradeoff",
   "temperature_k": 300,
-  "default_materials": ["si", "diamond", "aln", "gan","4h-sic" ],
+  "default_materials": ["si", "diamond", "c-bn", "aln", "4h-sic"],
   "properties": {
     "band_gap": {
       "name": "Bandgap",
@@ -16,7 +16,7 @@
       "axis_max": 20,
       "scale": "linear",
       "default_axis": true,
-      "note": "Measured at N_D = 1e16 cm\u207b\u00b3. Silicon reads 0.42 here, not the textbook 0.3, because 0.3 is the same physics at N_D \u2248 1e15 cm\u207b\u00b3."
+      "note": "Values derived from measured impact-ionisation coefficients use N_D = 1e16 cm\u207b\u00b3. An asterisk marks empirical bandgap estimates and other calculated values."
     },
     "electron_mobility": {
       "name": "Mobility",
@@ -31,7 +31,7 @@
       "unit": "10\u2077 cm/s",
       "axis_max": 5,
       "scale": "linear",
-      "default_axis": true
+      "default_axis": false
     },
     "thermal_conductivity": {
       "name": "Thermal Conductivity",
@@ -57,7 +57,7 @@
       "unit": "",
       "axis_max": 15,
       "scale": "linear",
-      "default_axis": false,
+      "default_axis": true,
       "note": "Static (low-frequency) dielectric constant, E perpendicular c for uniaxial crystals."
     }
   },
@@ -147,7 +147,7 @@
             "source_note": "hole coefficient beta(E) measured on homoepitaxial GaN p-n diodes with avalanche capability"
           },
           "observations": [
-            {"value": 2.83, "temperature_k": 300, "polytype": "wurtzite", "doping_cm3": 1e16, "method": "critical field from measured electron and hole impact-ionisation coefficients (photomultiplication on homoepitaxial p-n diodes)", "reference": "ji-2019"}
+            {"value": 2.83, "temperature_k": 300, "polytype": "wurtzite", "doping_cm3": 1e16, "method": "critical field calculated from measured electron and hole impact-ionisation coefficients (photomultiplication on homoepitaxial p-n diodes)", "reference": "ji-2019", "calculated": true}
           ]
         },
         "electron_mobility": {
@@ -290,6 +290,13 @@
           "observations": [
             {"value": 3800, "temperature_k": 300, "polytype": "diamond cubic", "method": "time-of-flight; high-purity single-crystal CVD", "reference": "isberg-2002"}
           ]
+        },
+        "relative_permittivity": {
+          "value": 5.7,
+          "aggregation": "single cited compilation value; primary measurement not traced",
+          "observations": [
+            {"value": 5.7, "temperature_k": 300, "polytype": "diamond cubic", "method": "static relative permittivity; cited compilation value", "reference": "diamond-permittivity-1995"}
+          ]
         }
       }
     },
@@ -307,6 +314,13 @@
             {"value": 6.026, "temperature_k": 300, "polytype": "wurtzite", "method": "temperature dependence of band gap", "reference": "guo-1994"},
             {"value": 6.2, "temperature_k": 300, "polytype": "wurtzite", "method": "absorption with excitonic contribution", "reference": "yamashita-1979"},
             {"value": 6.28, "temperature_k": 300, "polytype": "wurtzite", "method": "excitonic edge; 75 meV binding energy assumed", "reference": "roskovcova-1980"}
+          ]
+        },
+        "breakdown_field": {
+          "value": 16.35,
+          "aggregation": "empirical bandgap estimate; not a measured breakdown field",
+          "observations": [
+            {"value": 16.35, "temperature_k": 300, "polytype": "wurtzite", "method": "empirical estimate E_crit = 1.73e5 E_g^2.5 V/cm using E_g = 6.169 eV", "reference": "hudgins-2003", "calculated": true}
           ]
         },
         "electron_mobility": {
@@ -355,7 +369,7 @@
             "source_note": ""
           },
           "observations": [
-            {"value": 0.42, "temperature_k": 300, "doping_cm3": 1e16, "method": "critical field from measured avalanche ionization rates in Si p-n junctions", "reference": "vanoverstraeten-1970"}
+            {"value": 0.42, "temperature_k": 300, "doping_cm3": 1e16, "method": "critical field calculated from measured avalanche ionization rates in Si p-n junctions", "reference": "vanoverstraeten-1970", "calculated": true}
           ]
         },
         "electron_mobility": {
@@ -422,7 +436,7 @@
           "value": 3.26,
           "aggregation": "still backed only by a device-simulation parameter set; needs a measured replacement",
           "observations": [
-            {"value": 3.26, "temperature_k": 300, "polytype": "4H", "method": "material parameter set used for SiC device physics/simulation", "reference": "ruff-1994"}
+            {"value": 3.26, "temperature_k": 300, "polytype": "4H", "method": "material parameter set used for SiC device physics/simulation", "reference": "ruff-1994", "simulated": true}
           ]
         },
         "breakdown_field": {
@@ -434,7 +448,7 @@
             "source_note": ""
           },
           "observations": [
-            {"value": 3.3, "temperature_k": 300, "polytype": "4H", "doping_cm3": 1e16, "method": "critical field from measured impact-ionization coefficients (electron-beam excitation)", "reference": "raghunathan-1999"}
+            {"value": 3.3, "temperature_k": 300, "polytype": "4H", "doping_cm3": 1e16, "method": "critical field calculated from measured impact-ionization coefficients (electron-beam excitation)", "reference": "raghunathan-1999", "calculated": true}
           ]
         },
         "electron_mobility": {
@@ -835,6 +849,7 @@
       "label": "c-BN",
       "aliases": ["Cubic boron nitride", "Zinc-blende boron nitride"],
       "polytype": "zinc blende",
+      "color": "#17a2a4",
       "traced_via": "levinshtein-2001",
       "chapter_properties": {
         "source": "levinshtein-2001",
@@ -878,6 +893,13 @@
           "aggregation": "single primary observation; indirect gap",
           "observations": [
             {"value": 6.4, "temperature_k": 300, "polytype": "cubic", "method": "ultraviolet absorption edge on synthetic c-BN crystals", "reference": "chrenko-1974"}
+          ]
+        },
+        "breakdown_field": {
+          "value": 17.93,
+          "aggregation": "empirical bandgap estimate; not a measured breakdown field",
+          "observations": [
+            {"value": 17.93, "temperature_k": 300, "polytype": "cubic", "method": "empirical estimate E_crit = 1.73e5 E_g^2.5 V/cm using E_g = 6.4 eV", "reference": "hudgins-2003", "calculated": true}
           ]
         },
         "thermal_conductivity": {

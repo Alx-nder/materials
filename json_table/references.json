@@ -90,6 +90,15 @@
                        "journal":  "Journal of Physics and Chemistry of Solids",
                        "year":  1987
                    },
+    "diamond-permittivity-1995":  {
+                         "doi":  "10.1002/cvde.19950010109",
+                         "title":  "Synthetic diamond: Emerging CVD science and technology",
+                         "authors":  "Collins",
+                         "journal":  "Chemical Vapor Deposition",
+                         "year":  1995,
+                         "source_type":  "secondary compilation",
+                         "note":  "Supplied citation for the 300 K relative-permittivity value. Crossref identifies this record as a book notice."
+                     },
     "collins-1967":  {
                          "doi":  "10.1103/physrev.158.833",
                          "title":  "Lattice vibration spectra of aluminum nitride",

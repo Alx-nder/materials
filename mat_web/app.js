@@ -9,8 +9,8 @@ const state = {
 
 async function init() {
   const [materialsResponse, referencesResponse] = await Promise.all([
-    fetch("../json_table/materials.json"),
-    fetch("../json_table/references.json"),
+    fetch("../json_table/materials.json?v=20260802-2", { cache: "no-store" }),
+    fetch("../json_table/references.json?v=20260802-2", { cache: "no-store" }),
   ]);
   state.data = await materialsResponse.json();
   state.data.references = await referencesResponse.json();
