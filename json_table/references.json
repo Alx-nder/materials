@@ -1,0 +1,969 @@
+{
+    "maruska-1969":  {
+                         "doi":  "10.1063/1.1652845",
+                         "title":  "The preparation and properties of vapor-deposited single-crystalline GaN",
+                         "authors":  "Maruska, Tietjen",
+                         "journal":  "Applied Physics Letters",
+                         "year":  1969
+                     },
+    "barker-1973":  {
+                        "doi":  "10.1103/physrevb.7.743",
+                        "title":  "Infrared lattice vibrations and free-electron dispersion in GaN",
+                        "authors":  "Barker, Ilegems",
+                        "journal":  "Physical Review B",
+                        "year":  1973
+                    },
+    "tippins-1965":  {
+                         "doi":  "10.1103/physrev.140.a316",
+                         "title":  "Optical absorption and photoconductivity in the band edge of beta-Ga2O3",
+                         "authors":  "Tippins",
+                         "journal":  "Physical Review",
+                         "year":  1965
+                     },
+    "irmscher-2011":  {
+                          "doi":  "10.1063/1.3642962",
+                          "title":  "Electrical properties of beta-Ga2O3 single crystals grown by the Czochralski method",
+                          "authors":  "Irmscher, Galazka, Pietsch, Uecker, Fornari",
+                          "journal":  "Journal of Applied Physics",
+                          "year":  2011
+                      },
+    "guo-2015":  {
+                     "doi":  "10.1063/1.4916078",
+                     "title":  "Anisotropic thermal conductivity in single crystal beta-gallium oxide",
+                     "authors":  "Guo, Verma, Jiang, Zhang, et al.",
+                     "journal":  "Applied Physics Letters",
+                     "year":  2015
+                 },
+    "clark-1964":  {
+                       "doi":  "10.1098/rspa.1964.0025",
+                       "title":  "Intrinsic edge absorption in diamond",
+                       "authors":  "Clark, Dean, Harris",
+                       "journal":  "Proceedings of the Royal Society A",
+                       "year":  1964
+                   },
+    "isberg-2002":  {
+                        "doi":  "10.1126/science.1074374",
+                        "title":  "High carrier mobility in single-crystal plasma-deposited diamond",
+                        "authors":  "Isberg, Hammersberg, Johansson, et al.",
+                        "journal":  "Science",
+                        "year":  2002
+                    },
+    "wei-1993":  {
+                     "doi":  "10.1103/physrevlett.70.3764",
+                     "title":  "Thermal conductivity of isotopically modified single crystal diamond",
+                     "authors":  "Wei, Kuo, Thomas, Anthony, Banholzer",
+                     "journal":  "Physical Review Letters",
+                     "year":  1993
+                 },
+    "volpe-2010":  {
+                       "doi":  "10.1063/1.3520140",
+                       "title":  "Extreme dielectric strength in boron doped homoepitaxial diamond",
+                       "authors":  "Volpe, Muret, Pernot, et al.",
+                       "journal":  "Applied Physics Letters",
+                       "year":  2010
+                   },
+    "guo-1994":  {
+                     "doi":  "10.1143/jjap.33.2453",
+                     "title":  "Temperature dependence of band gap change in InN and AlN",
+                     "authors":  "Guo, Yoshida",
+                     "journal":  "Japanese Journal of Applied Physics",
+                     "year":  1994
+                 },
+    "yamashita-1979":  {
+                           "doi":  "10.1063/1.326007",
+                           "title":  "Optical properties of AlN epitaxial thin films in the vacuum ultraviolet region",
+                           "authors":  "Yamashita, Fukui, Misawa, Ohtsuka",
+                           "journal":  "Journal of Applied Physics",
+                           "year":  1979
+                       },
+    "roskovcova-1980":  {
+                            "doi":  "10.1007/bf01596307",
+                            "title":  "The Urbach absorption edge in AlN",
+                            "authors":  "Roskovcova, Pastrnak",
+                            "journal":  "Czechoslovak Journal of Physics B",
+                            "year":  1980
+                        },
+    "slack-1987":  {
+                       "doi":  "10.1016/0022-3697(87)90153-3",
+                       "title":  "The intrinsic thermal conductivity of AlN",
+                       "authors":  "Slack, Tanzilli, Pohl, Vandersande",
+                       "journal":  "Journal of Physics and Chemistry of Solids",
+                       "year":  1987
+                   },
+    "collins-1967":  {
+                         "doi":  "10.1103/physrev.158.833",
+                         "title":  "Lattice vibration spectra of aluminum nitride",
+                         "authors":  "Collins, Lightowlers, Dean",
+                         "journal":  "Physical Review",
+                         "year":  1967
+                     },
+    "barker-2005":  {
+                        "doi":  "10.1063/1.1854724",
+                        "title":  "Bulk GaN and AlGaN/GaN heterostructure drift velocity measurements and comparison to theoretical models",
+                        "authors":  "Barker, Ferry, Koleske, Shul",
+                        "journal":  "Journal of Applied Physics",
+                        "year":  2005
+                    },
+    "dhara-2022":  {
+                       "doi":  "10.1063/5.0123284",
+                       "title":  "ÃŽÂ²-Ga2O3 Schottky barrier diodes with 4.1 MV/cm field strength by deep plasma etching field-termination",
+                       "authors":  "Dhara, Kalarickal, Dheenan, Joishi, Rajan",
+                       "journal":  "Applied Physics Letters",
+                       "year":  2022
+                   },
+    "hoeneisen-1971":  {
+                           "doi":  "10.1016/0038-1101(71)90176-6",
+                           "title":  "Permittivity of ÃŽÂ²-Ga2O3 at low frequencies",
+                           "authors":  "Hoeneisen, Mead, Nicolet",
+                           "journal":  "Solid-State Electronics",
+                           "year":  1971
+                       },
+    "pomorski-2006":  {
+                          "doi":  "10.1002/pssa.200671127",
+                          "title":  "Development of single-crystal CVD-diamond detectors for spectroscopy and timing",
+                          "authors":  "Pomorski, Berdermann, Caragheorgheopol, Ciobanu, Kis, Martemiyanov, Nebel, Moritz",
+                          "journal":  "physica status solidi (a)",
+                          "year":  2006
+                      },
+    "bludau-1974":  {
+                        "doi":  "10.1063/1.1663501",
+                        "title":  "Temperature dependence of the band gap of silicon",
+                        "authors":  "Bludau, Onton, Heinke",
+                        "journal":  "Journal of Applied Physics",
+                        "year":  1974
+                    },
+    "vanoverstraeten-1970":  {
+                                 "doi":  "10.1016/0038-1101(70)90139-5",
+                                 "title":  "Measurement of the ionization rates in diffused silicon p-n junctions",
+                                 "authors":  "Van Overstraeten, De Man",
+                                 "journal":  "Solid-State Electronics",
+                                 "year":  1970
+                             },
+    "jacoboni-1977":  {
+                          "doi":  "10.1016/0038-1101(77)90054-5",
+                          "title":  "A review of some charge transport properties of silicon",
+                          "authors":  "Jacoboni, Canali, Ottaviani, Alberigi Quaranta",
+                          "journal":  "Solid-State Electronics",
+                          "year":  1977
+                      },
+    "glassbrenner-1964":  {
+                              "doi":  "10.1103/physrev.134.a1058",
+                              "title":  "Thermal conductivity of silicon and germanium from 3 K to the melting point",
+                              "authors":  "Glassbrenner, Slack",
+                              "journal":  "Physical Review",
+                              "year":  1964
+                          },
+    "dunlap-1953":  {
+                        "doi":  "10.1103/physrev.92.1396",
+                        "title":  "Direct measurement of the dielectric constants of silicon and germanium",
+                        "authors":  "Dunlap, Watters",
+                        "journal":  "Physical Review",
+                        "year":  1953
+                    },
+    "patrick-choyke-1970":  {
+                                "doi":  "10.1103/physrevb.2.2255",
+                                "title":  "Static dielectric constant of SiC",
+                                "authors":  "Patrick, Choyke",
+                                "journal":  "Physical Review B",
+                                "year":  1970
+                            },
+    "ruff-1994":  {
+                      "doi":  "10.1109/16.293319",
+                      "title":  "SiC devices: physics and numerical simulation",
+                      "authors":  "Ruff, Mitlehner, Helbig",
+                      "journal":  "IEEE Transactions on Electron Devices",
+                      "year":  1994
+                  },
+    "hudgins-2003":  {
+                         "doi":  "10.1109/tpel.2003.810840",
+                         "title":  "An assessment of wide bandgap semiconductors for power devices",
+                         "authors":  "Hudgins, Simin, Santi, Khan",
+                         "journal":  "IEEE Transactions on Power Electronics",
+                         "year":  2003,
+                         "source_type":  "empirical breakdown-field model"
+                     },
+    "baliga-2019":  {
+                        "doi":  "10.1007/978-3-319-93988-9_2",
+                        "title":  "Material Properties and Transport Physics (Chapter 2), in Fundamentals of Power Semiconductor Devices, 2nd edn",
+                        "authors":  "Baliga",
+                        "journal":  "Springer, Cham",
+                        "year":  2019,
+                        "source_type":  "secondary compilation",
+                        "note":  ""
+                    },
+    "wright-1998":  {
+                        "doi":  "10.4028/www.scientific.net/msf.264-268.917",
+                        "title":  "Electrothermal Simulation of 4H-SiC Power Devices",
+                        "authors":  "Wright, Morrison, Johnson, O\u0027Neill",
+                        "journal":  "Materials Science Forum",
+                        "year":  1998,
+                        "source_type":  "simulation",
+                        "note":  ""
+                    },
+    "schaffer-1994":  {
+                          "doi":  "10.1557/proc-339-595",
+                          "title":  "Conductivity Anisotropy in Epitaxial 6H and 4H SiC",
+                          "authors":  "Schaffer, Negley, Irvine, Palmour",
+                          "journal":  "MRS Proceedings",
+                          "year":  1994
+                      },
+    "koizumi-2009":  {
+                         "doi":  "10.1063/1.3158565",
+                         "title":  "Temperature and doping dependencies of electrical properties in Al-doped 4H-SiC epitaxial layers",
+                         "authors":  "Koizumi, Suda, Kimoto",
+                         "journal":  "Journal of Applied Physics",
+                         "year":  2009
+                     },
+    "raghunathan-1999":  {
+                             "doi":  "10.1016/s0038-1101(98)00248-2",
+                             "title":  "Temperature dependence of hole impact ionization coefficients in 4H and 6H-SiC",
+                             "authors":  "Raghunathan, Baliga",
+                             "journal":  "Solid-State Electronics",
+                             "year":  1999
+                         },
+    "khan-cooper-2000":  {
+                             "doi":  "10.1109/16.822266",
+                             "title":  "Measurement of high-field electron transport in silicon carbide",
+                             "authors":  "Khan, Cooper",
+                             "journal":  "IEEE Transactions on Electron Devices",
+                             "year":  2000
+                         },
+    "madelung-2004":  {
+                          "doi":  "10.1007/978-3-642-18865-7",
+                          "title":  "Semiconductors: Data Handbook, 3rd edn",
+                          "authors":  "Madelung",
+                          "journal":  "Springer, Berlin",
+                          "year":  2004,
+                          "source_type":  "data handbook"
+                      },
+    "geick-1966":  {
+                       "doi":  "10.1103/physrev.146.543",
+                       "title":  "Normal Modes in Hexagonal Boron Nitride",
+                       "authors":  "Geick, Perry, Rupprecht",
+                       "journal":  "Physical Review",
+                       "year":  1966,
+                       "source_type":  "primary infrared measurement",
+                       "catalog_only":  true
+                   },
+    "levinshtein-2001":  {
+                             "isbn":  "0-471-35827-4",
+                             "title":  "Properties of Advanced Semiconductor Materials: GaN, AlN, InN, BN, SiC, SiGe",
+                             "authors":  "Levinshtein, Rumyantsev, Shur (eds.)",
+                             "journal":  "Wiley-Interscience, New York",
+                             "year":  2001,
+                             "source_type":  "edited handbook",
+                             "note":  "Chapter-by-chapter compilation. Used as a lead only: take its citation trail back to the measurement, do not plot a number straight out of it."
+                         },
+    "ghosh-2017":  {
+                       "doi":  "10.1063/1.4986174",
+                       "title":  "Ab initio velocity-field curves in monoclinic beta-Ga2O3",
+                       "authors":  "Ghosh, Singisetti",
+                       "journal":  "Journal of Applied Physics",
+                       "year":  2017,
+                       "source_type":  "simulation"
+                   },
+    "macfarlane-1957":  {
+                            "doi":  "10.1103/physrev.108.1377",
+                            "title":  "Fine Structure in the Absorption-Edge Spectrum of Ge",
+                            "authors":  "Macfarlane, McLean, Quarrington, Roberts",
+                            "journal":  "Physical Review",
+                            "year":  1957
+                        },
+    "miller-1955":  {
+                        "doi":  "10.1103/physrev.99.1234",
+                        "title":  "Avalanche Breakdown in Germanium",
+                        "authors":  "Miller",
+                        "journal":  "Physical Review",
+                        "year":  1955
+                    },
+    "bulman-1985":  {
+                        "doi":  "10.1109/t-ed.1985.22295",
+                        "title":  "The determination of impact ionization coefficients in (100) gallium arsenide using avalanche noise and photocurrent multiplication measurements",
+                        "authors":  "Bulman, Robbins, Stillman",
+                        "journal":  "IEEE Transactions on Electron Devices",
+                        "year":  1985
+                    },
+    "turner-1964":  {
+                        "doi":  "10.1103/physrev.136.a1467",
+                        "title":  "Exciton Absorption and Emission in InP",
+                        "authors":  "Turner, Reese, Pettit",
+                        "journal":  "Physical Review",
+                        "year":  1964
+                    },
+    "walukiewicz-1980":  {
+                             "doi":  "10.1063/1.327925",
+                             "title":  "Electron mobility and free-carrier absorption in InP; determination of the compensation ratio",
+                             "authors":  "Walukiewicz, Lagowski, Jastrzebski, Rava, Lichtensteiger, Gatos, Gatos",
+                             "journal":  "Journal of Applied Physics",
+                             "year":  1980
+                         },
+    "cook-1982":  {
+                      "doi":  "10.1063/1.93190",
+                      "title":  "Electron and hole impact ionization coefficients in InP determined by photomultiplication measurements",
+                      "authors":  "Cook, Bulman, Stillman",
+                      "journal":  "Applied Physics Letters",
+                      "year":  1982
+                  },
+    "panish-casey-1969":  {
+                              "doi":  "10.1063/1.1657024",
+                              "title":  "Temperature Dependence of the Energy Gap in GaAs and GaP",
+                              "authors":  "Panish, Casey",
+                              "journal":  "Journal of Applied Physics",
+                              "year":  1969
+                          },
+    "prince-1953":  {
+                        "doi":  "10.1103/physrev.92.681",
+                        "title":  "Drift Mobilities in Semiconductors. I. Germanium",
+                        "authors":  "Prince",
+                        "journal":  "Physical Review",
+                        "year":  1953
+                    },
+    "sturge-1962":  {
+                        "doi":  "10.1103/physrev.127.768",
+                        "title":  "Optical Absorption of Gallium Arsenide between 0.6 and 2.75 eV",
+                        "authors":  "Sturge",
+                        "journal":  "Physical Review",
+                        "year":  1962
+                    },
+    "blakemore-1982":  {
+                           "doi":  "10.1063/1.331665",
+                           "title":  "Semiconducting and other major properties of gallium arsenide",
+                           "authors":  "Blakemore",
+                           "journal":  "Journal of Applied Physics",
+                           "year":  1982
+                       },
+    "carlson-1965":  {
+                         "doi":  "10.1063/1.1714018",
+                         "title":  "Thermal Conductivity of GaAs and GaAs1-xPx Laser Semiconductors",
+                         "authors":  "Carlson, Slack, Silverman",
+                         "journal":  "Journal of Applied Physics",
+                         "year":  1965
+                     },
+    "johnson-eknoyan-1985":  {
+                                 "doi":  "10.1063/1.336115",
+                                 "title":  "High-field electron drift velocity measurements in gallium phosphide",
+                                 "authors":  "Johnson, Eknoyan",
+                                 "journal":  "Journal of Applied Physics",
+                                 "year":  1985
+                             },
+    "wu-2002":  {
+                    "doi":  "10.1063/1.1482786",
+                    "title":  "Unusual properties of the fundamental band gap of InN",
+                    "authors":  "Wu, Walukiewicz, Yu, Ager, Haller, Lu, Schaff, Saito, Nanishi",
+                    "journal":  "Applied Physics Letters",
+                    "year":  2002
+                },
+    "look-sizelove-2001":  {
+                               "doi":  "10.1063/1.1394954",
+                               "title":  "Predicted maximum mobility in bulk GaN",
+                               "authors":  "Look, Sizelove",
+                               "journal":  "Applied Physics Letters",
+                               "year":  2001
+                           },
+    "kyle-2014":  {
+                      "doi":  "10.1063/1.4874735",
+                      "title":  "High-electron-mobility GaN grown on free-standing GaN templates by ammonia-based molecular beam epitaxy",
+                      "authors":  "Kyle, Kaun, Burke, Wu, Kaun, Speck",
+                      "journal":  "Journal of Applied Physics",
+                      "year":  2014
+                  },
+    "horita-2017":  {
+                        "doi":  "10.7567/jjap.56.031001",
+                        "title":  "Hall-effect measurements of metalorganic vapor-phase epitaxy-grown p-type homoepitaxial GaN layers with various Mg concentrations",
+                        "authors":  "Horita, Takashima, Tanaka, Matsuyama, Ueno, Edo, Nakamura, Amano, Kachi",
+                        "journal":  "Japanese Journal of Applied Physics",
+                        "year":  2017
+                    },
+    "ji-2019":  {
+                    "doi":  "10.1063/1.5099245",
+                    "title":  "Experimental determination of impact ionization coefficients of electrons and holes in gallium nitride using homojunction structures",
+                    "authors":  "Ji, Ercan, Chowdhury",
+                    "journal":  "Applied Physics Letters",
+                    "year":  2019
+                },
+    "mion-2006":  {
+                      "doi":  "10.1063/1.2335972",
+                      "title":  "Accurate dependence of gallium nitride thermal conductivity on dislocation density",
+                      "authors":  "Mion, Muth, Preble, Hanser",
+                      "journal":  "Applied Physics Letters",
+                      "year":  2006
+                  },
+    "inyushkin-2020":  {
+                           "doi":  "10.1134/s0021364020140039",
+                           "title":  "High Thermal Conductivity of Bulk GaN Single Crystal: An Accurate Experimental Determination",
+                           "authors":  "Inyushkin, Taldenkov, Chernodubov, Voronenkov, Shreter",
+                           "journal":  "JETP Letters",
+                           "year":  2020
+                       },
+    "taniyasu-2006":  {
+                          "doi":  "10.1063/1.2378726",
+                          "title":  "Increased electron mobility in n-type Si-doped AlN by reducing dislocation density",
+                          "authors":  "Taniyasu, Kasu, Makimoto",
+                          "journal":  "Applied Physics Letters",
+                          "year":  2006
+                      },
+    "wei-2013":  {
+                     "doi":  "10.1063/1.4790134",
+                     "title":  "Thermal conductivity of 4H-SiC single crystals",
+                     "authors":  "Wei, Song, Yang, Cui, Peng, Xu, Hu",
+                     "journal":  "Journal of Applied Physics",
+                     "year":  2013
+                 },
+    "cassabois-2016":  {
+                           "doi":  "10.1038/nphoton.2015.277",
+                           "title":  "Hexagonal boron nitride is an indirect bandgap semiconductor",
+                           "authors":  "Cassabois, Valvin, Gil",
+                           "journal":  "Nature Photonics",
+                           "year":  2016
+                       },
+    "hattori-2016":  {
+                         "doi":  "10.1021/acsami.6b06425",
+                         "title":  "Anisotropic Dielectric Breakdown Strength of Single Crystal Hexagonal Boron Nitride",
+                         "authors":  "Hattori, Taniguchi, Watanabe, Nagashio",
+                         "journal":  "ACS Applied Materials \u0026 Interfaces",
+                         "year":  2016
+                     },
+    "yuan-2019":  {
+                      "doi":  "10.1038/s42005-019-0145-5",
+                      "title":  "Modulating the thermal conductivity in hexagonal boron nitride via controlled boron isotope concentration",
+                      "authors":  "Yuan, Li, Lindsay, Cherns, Pomeroy, Liu, Edgar, Kuball",
+                      "journal":  "Communications Physics",
+                      "year":  2019
+                  },
+    "chrenko-1974":  {
+                         "doi":  "10.1016/0038-1098(74)90978-8",
+                         "title":  "Ultraviolet and infrared spectra of cubic boron nitride",
+                         "authors":  "Chrenko",
+                         "journal":  "Solid State Communications",
+                         "year":  1974
+                     },
+    "gielisse-1967":  {
+                          "doi":  "10.1103/physrev.155.1039",
+                          "title":  "Lattice Infrared Spectra of Boron Nitride and Boron Monophosphide",
+                          "authors":  "Gielisse, Mitra, Plendl, Griffis, Mansur, Marshall, Pascoe",
+                          "journal":  "Physical Review",
+                          "year":  1967
+                      },
+    "slack-1973":  {
+                       "doi":  "10.1016/0022-3697(73)90092-9",
+                       "title":  "Nonmetallic crystals with high thermal conductivity",
+                       "authors":  "Slack",
+                       "journal":  "Journal of Physics and Chemistry of Solids",
+                       "year":  1973
+                   },
+    "bar-yam-1992":  {
+                         "doi":  "10.1557/proc-242-335",
+                         "title":  "Quasi-Equilibrium Nucleation and Growth of Diamond and Cubic Boron-Nitride",
+                         "authors":  "Bar-Yam, Lei, Moustakas, Allen, Teter",
+                         "journal":  "MRS Proceedings",
+                         "year":  1992,
+                         "catalog_only":  true
+                     },
+    "belenkii-1985":  {
+                          "doi":  "10.1016/0038-1098(85)90470-3",
+                          "title":  "The nature of negative linear expansion in layer crystals C, Bn, GaS, GaSe and InSe",
+                          "authors":  "Belenkii, Salaev, Suleimanov, Abdullaev, Shteinshraiber",
+                          "journal":  "Solid State Communications",
+                          "year":  1985,
+                          "catalog_only":  true
+                      },
+    "brozek-1994":  {
+                        "doi":  "10.1016/0925-9635(94)90256-9",
+                        "title":  "Electrical behaviour and breakdown in plasma deposited cubic BN layers",
+                        "authors":  "Brozek, Szmidt, Jakubowski, Olszyna",
+                        "journal":  "Diamond and Related Materials",
+                        "year":  1994,
+                        "catalog_only":  true
+                    },
+    "christensen-1994":  {
+                             "doi":  "10.1103/physrevb.50.4397",
+                             "title":  "Optical and structural properties of III-V nitrides under pressure",
+                             "authors":  "Christensen, Gorczyca",
+                             "journal":  "Physical Review B",
+                             "year":  1994,
+                             "catalog_only":  true
+                         },
+    "duclaux-1992":  {
+                         "doi":  "10.1103/physrevb.46.3362",
+                         "title":  "Structure and low-temperature thermal conductivity of pyrolytic boron nitride",
+                         "authors":  "Duclaux, Nysten, Issi, Moore",
+                         "journal":  "Physical Review B",
+                         "year":  1992,
+                         "catalog_only":  true
+                     },
+    "ferhat-1998":  {
+                        "doi":  "10.1016/S0921-4526(98)00149-5",
+                        "title":  "Electronic structure of BN, BP and BAs",
+                        "authors":  "Ferhat, Zaoui, Certier, Aourag",
+                        "journal":  "Physica B: Condensed Matter",
+                        "year":  1998,
+                        "catalog_only":  true
+                    },
+    "green-1976":  {
+                       "doi":  "10.1063/1.432257",
+                       "title":  "Theoretical elastic behavior for hexagonal boron nitride",
+                       "authors":  "Green, Bolland, Bolland",
+                       "journal":  "The Journal of Chemical Physics",
+                       "year":  1976,
+                       "catalog_only":  true
+                   },
+    "grimsditch-1994":  {
+                            "doi":  "10.1063/1.357757",
+                            "title":  "Elastic constants of boron nitride",
+                            "authors":  "Grimsditch, Zouboulis, Polian",
+                            "journal":  "Journal of Applied Physics",
+                            "year":  1994,
+                            "catalog_only":  true
+                        },
+    "gubanov-1997":  {
+                         "doi":  "10.1103/physrevb.56.13077",
+                         "title":  "Electronic structure of defects and impurities in III-V nitrides. II. Be, Mg, and Si in cubic boron nitride",
+                         "authors":  "Gubanov, Pentaleri, Fong, Klein",
+                         "journal":  "Physical Review B",
+                         "year":  1997,
+                         "catalog_only":  true
+                     },
+    "hoffman-1984":  {
+                         "doi":  "10.1103/physrevb.30.6051",
+                         "title":  "Optical properties of pyrolytic boron nitride in the energy range 0.05-10 eV",
+                         "authors":  "Hoffman, Doll, Eklund",
+                         "journal":  "Physical Review B",
+                         "year":  1984,
+                         "catalog_only":  true
+                     },
+    "inaba-yoshiasa-1997":  {
+                                "doi":  "10.1143/JJAP.36.5644",
+                                "title":  "Low-Temperature Heat Capacity of Wurtzite-Type Boron Nitride",
+                                "authors":  "Yoshiasa",
+                                "journal":  "Japanese Journal of Applied Physics",
+                                "year":  1997,
+                                "catalog_only":  true
+                            },
+    "karch-1997":  {
+                       "doi":  "10.1103/physrevb.56.7404",
+                       "title":  "Ab initio lattice dynamics of BN and AlN: Covalent versus ionic forces",
+                       "authors":  "Karch, Bechstedt",
+                       "journal":  "Physical Review B",
+                       "year":  1997,
+                       "catalog_only":  true
+                   },
+    "kim-1996":  {
+                     "doi":  "10.1103/physrevb.53.16310",
+                     "title":  "Elastic constants and related properties of tetrahedrally bonded BN, AlN, GaN, and InN",
+                     "authors":  "Kim, Lambrecht, Segall",
+                     "journal":  "Physical Review B",
+                     "year":  1996,
+                     "catalog_only":  true
+                 },
+    "kolupayeva-1986":  {
+                            "doi":  "10.1016/0022-5088(86)90043-3",
+                            "title":  "Thermal expansion and characteristic temperature of dense modifications of boron nitride",
+                            "authors":  "Kolupayeva, Fuks, Gladkikh, Arinkin, Maikhin",
+                            "journal":  "Journal of the Less Common Metals",
+                            "year":  1986,
+                            "catalog_only":  true
+                        },
+    "litvinov-1998":  {
+                          "doi":  "10.1016/S0925-9635(97)00216-1",
+                          "title":  "Semiconducting cubic boron nitride",
+                          "authors":  "Litvinov, Taylor, Clarke",
+                          "journal":  "Diamond and Related Materials",
+                          "year":  1998,
+                          "catalog_only":  true
+                      },
+    "lu-1996":  {
+                    "doi":  "10.1063/1.116488",
+                    "title":  "Electrical properties of boron nitride thin films grown by neutralized nitrogen ion assisted vapor deposition",
+                    "authors":  "Lu, Bousetta, Bensaoula, Waters, Shulz",
+                    "journal":  "Applied Physics Letters",
+                    "year":  1996,
+                    "catalog_only":  true
+                },
+    "mishima-1987":  {
+                         "doi":  "10.1126/science.238.4824.181",
+                         "title":  "High-Temperature Cubic Boron Nitride P-N Junction Diode Made at High Pressure",
+                         "authors":  "Mishima, Tanaka, Yamaoka, Fukunaga",
+                         "journal":  "Science",
+                         "year":  1987,
+                         "catalog_only":  true
+                     },
+    "miyamoto-1995":  {
+                          "doi":  "10.1103/physrevb.52.14971",
+                          "title":  "Ab initio calculation of phonon spectra for graphite, BN, and BC2N sheets",
+                          "authors":  "Miyamoto, Cohen, Louie",
+                          "journal":  "Physical Review B",
+                          "year":  1995,
+                          "catalog_only":  true
+                      },
+    "miyata-1989":  {
+                        "doi":  "10.1103/physrevb.40.12028",
+                        "title":  "Optical constants of cubic boron nitride",
+                        "authors":  "Miyata, Moriki, Mishima, Fujisawa, Hattori",
+                        "journal":  "Physical Review B",
+                        "year":  1989,
+                        "catalog_only":  true
+                    },
+    "onodera-1993":  {
+                         "doi":  "10.1103/physrevb.48.2777",
+                         "title":  "Pressure dependence of the optical-absorption edge of cubic boron nitride",
+                         "authors":  "Onodera, Nakatani, Kobayashi, Nisida, Mishima",
+                         "journal":  "Physical Review B",
+                         "year":  1993,
+                         "catalog_only":  true
+                     },
+    "rodriguez-hernandez-1995":  {
+                                     "doi":  "10.1103/physrevb.51.14705",
+                                     "title":  "Electronic and structural properties of cubic BN and BP",
+                                     "authors":  "Rodriguez-Hernandez, Gonzalez-Diaz, Munoz",
+                                     "journal":  "Physical Review B",
+                                     "year":  1995,
+                                     "catalog_only":  true
+                                 },
+    "shimada-1998":  {
+                         "doi":  "10.1063/1.368739",
+                         "title":  "First-principles study on electronic and elastic properties of BN, AlN, and GaN",
+                         "authors":  "Shimada, Sota, Suzuki",
+                         "journal":  "Journal of Applied Physics",
+                         "year":  1998,
+                         "catalog_only":  true
+                     },
+    "shipilo-1986":  {
+                         "doi":  "10.1007/BF00843023",
+                         "title":  "Influence of sintering conditions on the properties of polycrystalline cubic boron nitride",
+                         "authors":  "Shipilo, Anichenko, Makovetskaya, Popelnyuk",
+                         "journal":  "Soviet Powder Metallurgy and Metal Ceramics",
+                         "year":  1986,
+                         "catalog_only":  true
+                     },
+    "sichel-1976":  {
+                        "doi":  "10.1103/physrevb.13.4607",
+                        "title":  "Heat capacity and thermal conductivity of hexagonal pyrolytic boron nitride",
+                        "authors":  "Sichel, Miller, Abrahams, Buiocchi",
+                        "journal":  "Physical Review B",
+                        "year":  1976,
+                        "catalog_only":  true
+                    },
+    "simpson-1971":  {
+                         "doi":  "10.1088/0022-3719/4/13/021",
+                         "title":  "The thermal conductivity of highly oriented pyrolytic boron nitride",
+                         "authors":  "Simpson, Stuckes",
+                         "journal":  "Journal of Physics C: Solid State Physics",
+                         "year":  1971,
+                         "catalog_only":  true
+                     },
+    "slack-bartram-1975":  {
+                               "doi":  "10.1063/1.321373",
+                               "title":  "Thermal expansion of some diamondlike crystals",
+                               "authors":  "Slack, Bartram",
+                               "journal":  "Journal of Applied Physics",
+                               "year":  1975,
+                               "catalog_only":  true
+                           },
+    "solozhenko-peun-1997":  {
+                                 "doi":  "10.1016/S0022-3697(97)00037-1",
+                                 "title":  "Compression and thermal expansion of hexagonal graphite-like boron nitride up to 7 GPa and 1800 K",
+                                 "authors":  "Solozhenko, Peun",
+                                 "journal":  "Journal of Physics and Chemistry of Solids",
+                                 "year":  1997,
+                                 "catalog_only":  true
+                             },
+    "solozhenko-1998":  {
+                            "doi":  "10.1063/1.121186",
+                            "title":  "Equation of state of wurtzitic boron nitride to 66 GPa",
+                            "authors":  "Solozhenko, Hausermann, Mezouar, Kunz",
+                            "journal":  "Applied Physics Letters",
+                            "year":  1998,
+                            "catalog_only":  true
+                        },
+    "taniguchi-1993":  {
+                           "doi":  "10.1063/1.108887",
+                           "title":  "High pressure synthesis of semiconducting Be-doped polycrystalline cubic boron nitride and its electrical properties",
+                           "authors":  "Taniguchi, Tanaka, Mishima, Ohsawa, Yamaoka",
+                           "journal":  "Applied Physics Letters",
+                           "year":  1993,
+                           "catalog_only":  true
+                       },
+    "wentorf-1957":  {
+                         "doi":  "10.1063/1.1745964",
+                         "title":  "Cubic Form of Boron Nitride",
+                         "authors":  "Wentorf",
+                         "journal":  "The Journal of Chemical Physics",
+                         "year":  1957,
+                         "catalog_only":  true
+                     },
+    "yixi-1994":  {
+                      "doi":  "10.1103/physrevb.50.18637",
+                      "title":  "Vacuum-ultraviolet reflectance spectra and optical properties of nanoscale wurtzite boron nitride",
+                      "authors":  "Yixi, Xin, Kun, Chaoshu, Zhengfu, Junyan, Jie, Sheng, Yuanbin",
+                      "journal":  "Physical Review B",
+                      "year":  1994,
+                      "catalog_only":  true
+                  },
+    "xu-ching-1991":  {
+                          "doi":  "10.1103/physrevb.44.7787",
+                          "title":  "Calculation of ground-state and optical properties of boron nitrides in the hexagonal, cubic, and wurtzite structures",
+                          "authors":  "Xu, Ching",
+                          "journal":  "Physical Review B",
+                          "year":  1991,
+                          "catalog_only":  true
+                      },
+    "yates-1975":  {
+                       "doi":  "10.1080/14786437508221624",
+                       "title":  "The anisotropic thermal expansion of boron nitride",
+                       "authors":  "Yates, Overy, Pirgon",
+                       "journal":  "Philosophical Magazine",
+                       "year":  1975,
+                       "catalog_only":  true
+                   },
+    "zunger-1976":  {
+                        "doi":  "10.1103/physrevb.13.5560",
+                        "title":  "Optical properties of hexagonal boron nitride",
+                        "authors":  "Zunger, Katzir, Halperin",
+                        "journal":  "Physical Review B",
+                        "year":  1976,
+                        "catalog_only":  true
+                    },
+    "aln-aita-1989":  {
+                          "doi":  "10.1063/1.343986",
+                          "title":  "Optical behavior near the fundamental absorption edge of sputter-deposited microcrystalline aluminum nitride",
+                          "authors":  "Aita, Kubiak, Shih",
+                          "journal":  "Journal of Applied Physics",
+                          "year":  1989,
+                          "source_type":  "AlN chapter bibliography lead",
+                          "catalog_only":  true
+                      },
+    "aln-akasaki-1967":  {
+                             "doi":  "10.1016/0038-1098(67)90313-4",
+                             "title":  "Infrared lattice vibration of vapour-grown AlN",
+                             "authors":  "Akasaki, Hashimoto",
+                             "journal":  "Solid State Communications",
+                             "year":  1967,
+                             "source_type":  "AlN chapter bibliography lead",
+                             "catalog_only":  true
+                         },
+    "boguslawski-1996":  {
+                             "doi":  "10.1063/1.117934",
+                             "title":  "Amphoteric properties of substitutional carbon impurity in GaN and AlN",
+                             "authors":  "Bogusl/awski, Briggs, Bernholc",
+                             "journal":  "Applied Physics Letters",
+                             "year":  1996,
+                             "source_type":  "AlN chapter bibliography lead",
+                             "catalog_only":  true
+                         },
+    "chin-1994":  {
+                      "doi":  "10.1063/1.356650",
+                      "title":  "Electron mobilities in gallium, indium, and aluminum nitrides",
+                      "authors":  "Chin, Tansley, Osotchan",
+                      "journal":  "Journal of Applied Physics",
+                      "year":  1994,
+                      "source_type":  "AlN chapter bibliography lead",
+                      "catalog_only":  true
+                  },
+    "chu-1967":  {
+                     "doi":  "10.1016/0038-1101(67)90152-9",
+                     "title":  "Epitaxial growth of aluminum nitride",
+                     "authors":  "Chu, Ing, Noreika",
+                     "journal":  "Solid-State Electronics",
+                     "year":  1967,
+                     "source_type":  "AlN chapter bibliography lead",
+                     "catalog_only":  true
+                 },
+    "demiryont-1986":  {
+                           "doi":  "10.1364/ao.25.001311",
+                           "title":  "Optical properties of aluminum oxynitrides deposited by laser-assisted CVD",
+                           "authors":  "Demiryont, Thompson, Collins",
+                           "journal":  "Applied Optics",
+                           "year":  1986,
+                           "source_type":  "AlN chapter bibliography lead",
+                           "catalog_only":  true
+                       },
+    "dmitriev-1996":  {
+                          "doi":  "10.1557/proc-423-69",
+                          "title":  "Radiative Recombination Rates in GaN, InN, AlN and their Solid Solutions",
+                          "authors":  "Dmitriev, Oruzheinikov",
+                          "journal":  "MRS Proceedings",
+                          "year":  1996,
+                          "source_type":  "AlN chapter bibliography lead",
+                          "catalog_only":  true
+                      },
+    "edwards-1965":  {
+                         "doi":  "10.1016/0038-1098(65)90231-0",
+                         "title":  "Space charge conduction and electrical behaviour of aluminium nitride single crystals",
+                         "authors":  "Edwards, Kawabe, Stevens, Tredgold",
+                         "journal":  "Solid State Communications",
+                         "year":  1965,
+                         "source_type":  "AlN chapter bibliography lead",
+                         "catalog_only":  true
+                     },
+    "francis-worrell-1976":  {
+                                 "doi":  "10.1149/1.2132844",
+                                 "title":  "High Temperature Electrical Conductivity of Aluminum Nitride",
+                                 "authors":  "Francis, Worrell",
+                                 "journal":  "Journal of The Electrochemical Society",
+                                 "year":  1976,
+                                 "source_type":  "AlN chapter bibliography lead",
+                                 "catalog_only":  true
+                             },
+    "gerlich-1986":  {
+                         "doi":  "10.1016/0022-3697(86)90039-9",
+                         "title":  "Elastic properties of aluminum nitride",
+                         "authors":  "Gerlich, Dole, Slack",
+                         "journal":  "Journal of Physics and Chemistry of Solids",
+                         "year":  1986,
+                         "source_type":  "AlN chapter bibliography lead",
+                         "catalog_only":  true
+                     },
+    "gorczyca-christensen-1993":  {
+                                      "doi":  "10.1016/0921-4526(93)90270-g",
+                                      "title":  "Band structure and high-pressure phase transition in GaN, AlN, InN and BN",
+                                      "authors":  "Gorczyca, Christensen",
+                                      "journal":  "Physica B: Condensed Matter",
+                                      "year":  1993,
+                                      "source_type":  "AlN chapter bibliography lead",
+                                      "catalog_only":  true
+                                  },
+    "gorczyca-svane-1997":  {
+                                "doi":  "10.1557/s1092578300001447",
+                                "title":  "Theoretical study of point defects in GaN and AlN; lattice relaxations and pressure effects",
+                                "authors":  "Gorczyca, Svane, Christensen",
+                                "journal":  "MRS Internet Journal of Nitride Semiconductor Research",
+                                "year":  1997,
+                                "source_type":  "AlN chapter bibliography lead",
+                                "catalog_only":  true
+                            },
+    "macmillan-1993":  {
+                           "doi":  "10.1063/1.108595",
+                           "title":  "Infrared reflectance of thin aluminum nitride films on various substrates",
+                           "authors":  "MacMillan, Devaty, Choyke",
+                           "journal":  "Applied Physics Letters",
+                           "year":  1993,
+                           "source_type":  "AlN chapter bibliography lead",
+                           "catalog_only":  true
+                       },
+    "martin-1996":  {
+                        "doi":  "10.1063/1.116177",
+                        "title":  "Valence-band discontinuities of wurtzite GaN, AlN, and InN heterojunctions measured by x-ray photoemission spectroscopy",
+                        "authors":  "Martin, Botchkarev, Rockett, Morkoç",
+                        "journal":  "Applied Physics Letters",
+                        "year":  1996,
+                        "source_type":  "AlN chapter bibliography lead",
+                        "catalog_only":  true
+                    },
+    "mcneil-1993":  {
+                        "doi":  "10.1111/j.1151-2916.1993.tb03730.x",
+                        "title":  "Vibrational Spectroscopy of Aluminum Nitride",
+                        "authors":  "McNeil, Grimsditch, French",
+                        "journal":  "Journal of the American Ceramic Society",
+                        "year":  1993,
+                        "source_type":  "AlN chapter bibliography lead",
+                        "catalog_only":  true
+                    },
+    "mohammad-1995":  {
+                          "doi":  "10.1109/5.469300",
+                          "title":  "Emerging gallium nitride based devices",
+                          "authors":  "Mohammad, Salvador, Morkoc",
+                          "journal":  "Proceedings of the IEEE",
+                          "year":  1995,
+                          "source_type":  "AlN chapter bibliography lead",
+                          "catalog_only":  true
+                      },
+    "morkoc-1994":  {
+                        "doi":  "10.1063/1.358463",
+                        "title":  "Large-band-gap SiC, III-V nitride, and II-VI ZnSe-based semiconductor device technologies",
+                        "authors":  "Morkoç, Strite, Gao, Lin, et al.",
+                        "journal":  "Journal of Applied Physics",
+                        "year":  1994,
+                        "source_type":  "AlN chapter bibliography lead",
+                        "catalog_only":  true
+                    },
+    "perlin-1993":  {
+                        "doi":  "10.1103/physrevb.47.2874",
+                        "title":  "Raman-scattering studies of aluminum nitride at high pressure",
+                        "authors":  "Perlin, Polian, Suski",
+                        "journal":  "Physical Review B",
+                        "year":  1993,
+                        "source_type":  "AlN chapter bibliography lead",
+                        "catalog_only":  true
+                    },
+    "perry-rutz-1978":  {
+                            "doi":  "10.1063/1.90354",
+                            "title":  "The optical absorption edge of single-crystal AlN prepared by a close-spaced vapor process",
+                            "authors":  "Perry, Rutz",
+                            "journal":  "Applied Physics Letters",
+                            "year":  1978,
+                            "source_type":  "AlN chapter bibliography lead",
+                            "catalog_only":  true
+                        },
+    "tansley-1992":  {
+                         "doi":  "10.1103/physrevb.45.10942",
+                         "title":  "Point-defect energies in the nitrides of aluminum, gallium, and indium",
+                         "authors":  "Tansley, Egan",
+                         "journal":  "Physical Review B",
+                         "year":  1992,
+                         "source_type":  "AlN chapter bibliography lead",
+                         "catalog_only":  true
+                     },
+    "thokala-1995":  {
+                         "doi":  "10.1016/0040-6090(96)80022-8",
+                         "title":  "Calculated elastic constants of wide band gap semiconductor thin films with a hexagonal crystal structure for stress problems",
+                         "authors":  "Thokala, Chaudhuri",
+                         "journal":  "Thin Solid Films",
+                         "year":  1995,
+                         "source_type":  "AlN chapter bibliography lead",
+                         "catalog_only":  true
+                     },
+    "van-camp-1991":  {
+                          "doi":  "10.1103/physrevb.44.9056",
+                          "title":  "High-pressure properties of wurtzite- and rocksalt-type aluminum nitride",
+                          "authors":  "Van Camp, Van Doren, Devreese",
+                          "journal":  "Physical Review B",
+                          "year":  1991,
+                          "source_type":  "AlN chapter bibliography lead",
+                          "catalog_only":  true
+                      },
+    "wongchotigul-1996":  {
+                              "doi":  "10.1557/proc-395-279",
+                              "title":  "Low Resistivity Aluminum Nitride: Carbon (AIN:C) Films Grown by Metal Organic Chemical Vapor Deposition",
+                              "authors":  "Wongchotiqul, Chen, Zhang, Tang, et al.",
+                              "journal":  "MRS Proceedings",
+                              "year":  1995,
+                              "source_type":  "AlN chapter bibliography lead",
+                              "catalog_only":  true
+                          },
+    "wright-1997":  {
+                        "doi":  "10.1063/1.366114",
+                        "title":  "Elastic properties of zinc-blende and wurtzite AlN, GaN, and InN",
+                        "authors":  "Wright",
+                        "journal":  "Journal of Applied Physics",
+                        "year":  1997,
+                        "source_type":  "AlN chapter bibliography lead",
+                        "catalog_only":  true
+                    },
+    "xinjiao-1986":  {
+                         "doi":  "10.1016/0040-6090(86)90056-8",
+                         "title":  "On the properties of AlN thin films grown by low temperature reactive r.f. sputtering",
+                         "authors":  "Xinjiao, Zechuan, Ziyou, Huazhe, et al.",
+                         "journal":  "Thin Solid Films",
+                         "year":  1986,
+                         "source_type":  "AlN chapter bibliography lead",
+                         "catalog_only":  true
+                     },
+    "xu-ching-1993":  {
+                          "doi":  "10.1103/physrevb.48.4335",
+                          "title":  "Electronic, optical, and structural properties of some wurtzite crystals",
+                          "authors":  "Xu, Ching",
+                          "journal":  "Physical Review B",
+                          "year":  1993,
+                          "source_type":  "AlN chapter bibliography lead",
+                          "catalog_only":  true
+                      },
+    "zarwasch-1992":  {
+                          "doi":  "10.1063/1.350592",
+                          "title":  "Fundamental optical absorption edge of reactively direct current magnetron sputter-deposited AlN thin films",
+                          "authors":  "Zarwasch, Rille, Pulker",
+                          "journal":  "Journal of Applied Physics",
+                          "year":  1992,
+                          "source_type":  "AlN chapter bibliography lead",
+                          "catalog_only":  true
+                      }
+}

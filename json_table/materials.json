@@ -123,443 +123,6 @@
       ]
     }
   },
-  "references": {
-    "maruska-1969": {
-      "doi": "10.1063/1.1652845",
-      "title": "The preparation and properties of vapor-deposited single-crystalline GaN",
-      "authors": "Maruska, Tietjen",
-      "journal": "Applied Physics Letters",
-      "year": 1969
-    },
-    "barker-1973": {
-      "doi": "10.1103/physrevb.7.743",
-      "title": "Infrared lattice vibrations and free-electron dispersion in GaN",
-      "authors": "Barker, Ilegems",
-      "journal": "Physical Review B",
-      "year": 1973
-    },
-    "tippins-1965": {
-      "doi": "10.1103/physrev.140.a316",
-      "title": "Optical absorption and photoconductivity in the band edge of beta-Ga2O3",
-      "authors": "Tippins",
-      "journal": "Physical Review",
-      "year": 1965
-    },
-    "irmscher-2011": {
-      "doi": "10.1063/1.3642962",
-      "title": "Electrical properties of beta-Ga2O3 single crystals grown by the Czochralski method",
-      "authors": "Irmscher, Galazka, Pietsch, Uecker, Fornari",
-      "journal": "Journal of Applied Physics",
-      "year": 2011
-    },
-    "guo-2015": {
-      "doi": "10.1063/1.4916078",
-      "title": "Anisotropic thermal conductivity in single crystal beta-gallium oxide",
-      "authors": "Guo, Verma, Jiang, Zhang, et al.",
-      "journal": "Applied Physics Letters",
-      "year": 2015
-    },
-    "clark-1964": {
-      "doi": "10.1098/rspa.1964.0025",
-      "title": "Intrinsic edge absorption in diamond",
-      "authors": "Clark, Dean, Harris",
-      "journal": "Proceedings of the Royal Society A",
-      "year": 1964
-    },
-    "isberg-2002": {
-      "doi": "10.1126/science.1074374",
-      "title": "High carrier mobility in single-crystal plasma-deposited diamond",
-      "authors": "Isberg, Hammersberg, Johansson, et al.",
-      "journal": "Science",
-      "year": 2002
-    },
-    "wei-1993": {
-      "doi": "10.1103/physrevlett.70.3764",
-      "title": "Thermal conductivity of isotopically modified single crystal diamond",
-      "authors": "Wei, Kuo, Thomas, Anthony, Banholzer",
-      "journal": "Physical Review Letters",
-      "year": 1993
-    },
-    "volpe-2010": {
-      "doi": "10.1063/1.3520140",
-      "title": "Extreme dielectric strength in boron doped homoepitaxial diamond",
-      "authors": "Volpe, Muret, Pernot, et al.",
-      "journal": "Applied Physics Letters",
-      "year": 2010
-    },
-    "guo-1994": {
-      "doi": "10.1143/jjap.33.2453",
-      "title": "Temperature dependence of band gap change in InN and AlN",
-      "authors": "Guo, Yoshida",
-      "journal": "Japanese Journal of Applied Physics",
-      "year": 1994
-    },
-    "yamashita-1979": {
-      "doi": "10.1063/1.326007",
-      "title": "Optical properties of AlN epitaxial thin films in the vacuum ultraviolet region",
-      "authors": "Yamashita, Fukui, Misawa, Ohtsuka",
-      "journal": "Journal of Applied Physics",
-      "year": 1979
-    },
-    "roskovcova-1980": {
-      "doi": "10.1007/bf01596307",
-      "title": "The Urbach absorption edge in AlN",
-      "authors": "Roskovcova, Pastrnak",
-      "journal": "Czechoslovak Journal of Physics B",
-      "year": 1980
-    },
-    "slack-1987": {
-      "doi": "10.1016/0022-3697(87)90153-3",
-      "title": "The intrinsic thermal conductivity of AlN",
-      "authors": "Slack, Tanzilli, Pohl, Vandersande",
-      "journal": "Journal of Physics and Chemistry of Solids",
-      "year": 1987
-    },
-    "collins-1967": {
-      "doi": "10.1103/physrev.158.833",
-      "title": "Lattice vibration spectra of aluminum nitride",
-      "authors": "Collins, Lightowlers, Dean",
-      "journal": "Physical Review",
-      "year": 1967
-    },
-    "barker-2005": {
-      "doi": "10.1063/1.1854724",
-      "title": "Bulk GaN and AlGaN/GaN heterostructure drift velocity measurements and comparison to theoretical models",
-      "authors": "Barker, Ferry, Koleske, Shul",
-      "journal": "Journal of Applied Physics",
-      "year": 2005
-    },
-    "dhara-2022": {
-      "doi": "10.1063/5.0123284",
-      "title": "\u03b2-Ga2O3 Schottky barrier diodes with 4.1 MV/cm field strength by deep plasma etching field-termination",
-      "authors": "Dhara, Kalarickal, Dheenan, Joishi, Rajan",
-      "journal": "Applied Physics Letters",
-      "year": 2022
-    },
-    "hoeneisen-1971": {
-      "doi": "10.1016/0038-1101(71)90176-6",
-      "title": "Permittivity of \u03b2-Ga2O3 at low frequencies",
-      "authors": "Hoeneisen, Mead, Nicolet",
-      "journal": "Solid-State Electronics",
-      "year": 1971
-    },
-    "pomorski-2006": {
-      "doi": "10.1002/pssa.200671127",
-      "title": "Development of single-crystal CVD-diamond detectors for spectroscopy and timing",
-      "authors": "Pomorski, Berdermann, Caragheorgheopol, Ciobanu, Kis, Martemiyanov, Nebel, Moritz",
-      "journal": "physica status solidi (a)",
-      "year": 2006
-    },
-    "bludau-1974": {
-      "doi": "10.1063/1.1663501",
-      "title": "Temperature dependence of the band gap of silicon",
-      "authors": "Bludau, Onton, Heinke",
-      "journal": "Journal of Applied Physics",
-      "year": 1974
-    },
-    "vanoverstraeten-1970": {
-      "doi": "10.1016/0038-1101(70)90139-5",
-      "title": "Measurement of the ionization rates in diffused silicon p-n junctions",
-      "authors": "Van Overstraeten, De Man",
-      "journal": "Solid-State Electronics",
-      "year": 1970
-    },
-    "jacoboni-1977": {
-      "doi": "10.1016/0038-1101(77)90054-5",
-      "title": "A review of some charge transport properties of silicon",
-      "authors": "Jacoboni, Canali, Ottaviani, Alberigi Quaranta",
-      "journal": "Solid-State Electronics",
-      "year": 1977
-    },
-    "glassbrenner-1964": {
-      "doi": "10.1103/physrev.134.a1058",
-      "title": "Thermal conductivity of silicon and germanium from 3 K to the melting point",
-      "authors": "Glassbrenner, Slack",
-      "journal": "Physical Review",
-      "year": 1964
-    },
-    "dunlap-1953": {
-      "doi": "10.1103/physrev.92.1396",
-      "title": "Direct measurement of the dielectric constants of silicon and germanium",
-      "authors": "Dunlap, Watters",
-      "journal": "Physical Review",
-      "year": 1953
-    },
-    "patrick-choyke-1970": {
-      "doi": "10.1103/physrevb.2.2255",
-      "title": "Static dielectric constant of SiC",
-      "authors": "Patrick, Choyke",
-      "journal": "Physical Review B",
-      "year": 1970
-    },
-    "ruff-1994": {
-      "doi": "10.1109/16.293319",
-      "title": "SiC devices: physics and numerical simulation",
-      "authors": "Ruff, Mitlehner, Helbig",
-      "journal": "IEEE Transactions on Electron Devices",
-      "year": 1994
-    },
-    "baliga-2019": {
-      "doi": "10.1007/978-3-319-93988-9_2",
-      "title": "Material Properties and Transport Physics (Chapter 2), in Fundamentals of Power Semiconductor Devices, 2nd edn",
-      "authors": "Baliga",
-      "journal": "Springer, Cham",
-      "year": 2019,
-      "source_type": "secondary compilation",
-      "note": ""
-    },
-    "wright-1998": {
-      "doi": "10.4028/www.scientific.net/msf.264-268.917",
-      "title": "Electrothermal Simulation of 4H-SiC Power Devices",
-      "authors": "Wright, Morrison, Johnson, O'Neill",
-      "journal": "Materials Science Forum",
-      "year": 1998,
-      "source_type": "simulation",
-      "note": ""
-    },
-    "schaffer-1994": {
-      "doi": "10.1557/proc-339-595",
-      "title": "Conductivity Anisotropy in Epitaxial 6H and 4H SiC",
-      "authors": "Schaffer, Negley, Irvine, Palmour",
-      "journal": "MRS Proceedings",
-      "year": 1994
-    },
-    "koizumi-2009": {
-      "doi": "10.1063/1.3158565",
-      "title": "Temperature and doping dependencies of electrical properties in Al-doped 4H-SiC epitaxial layers",
-      "authors": "Koizumi, Suda, Kimoto",
-      "journal": "Journal of Applied Physics",
-      "year": 2009
-    },
-    "raghunathan-1999": {
-      "doi": "10.1016/s0038-1101(98)00248-2",
-      "title": "Temperature dependence of hole impact ionization coefficients in 4H and 6H-SiC",
-      "authors": "Raghunathan, Baliga",
-      "journal": "Solid-State Electronics",
-      "year": 1999
-    },
-    "khan-cooper-2000": {
-      "doi": "10.1109/16.822266",
-      "title": "Measurement of high-field electron transport in silicon carbide",
-      "authors": "Khan, Cooper",
-      "journal": "IEEE Transactions on Electron Devices",
-      "year": 2000
-    },
-    "madelung-2004": {
-      "doi": "10.1007/978-3-642-18865-7",
-      "title": "Semiconductors: Data Handbook, 3rd edn",
-      "authors": "Madelung",
-      "journal": "Springer, Berlin",
-      "year": 2004,
-      "source_type": "data handbook"
-    },
-    "levinshtein-2001": {
-      "isbn": "0-471-35827-4",
-      "title": "Properties of Advanced Semiconductor Materials: GaN, AlN, InN, BN, SiC, SiGe",
-      "authors": "Levinshtein, Rumyantsev, Shur (eds.)",
-      "journal": "Wiley-Interscience, New York",
-      "year": 2001,
-      "source_type": "edited handbook",
-      "note": "Chapter-by-chapter compilation. Used as a lead only: take its citation trail back to the measurement, do not plot a number straight out of it."
-    },
-    "ghosh-2017": {
-      "doi": "10.1063/1.4986174",
-      "title": "Ab initio velocity-field curves in monoclinic beta-Ga2O3",
-      "authors": "Ghosh, Singisetti",
-      "journal": "Journal of Applied Physics",
-      "year": 2017,
-      "source_type": "simulation"
-    },
-    "macfarlane-1957": {
-      "doi": "10.1103/physrev.108.1377",
-      "title": "Fine Structure in the Absorption-Edge Spectrum of Ge",
-      "authors": "Macfarlane, McLean, Quarrington, Roberts",
-      "journal": "Physical Review",
-      "year": 1957
-    },
-    "miller-1955": {
-      "doi": "10.1103/physrev.99.1234",
-      "title": "Avalanche Breakdown in Germanium",
-      "authors": "Miller",
-      "journal": "Physical Review",
-      "year": 1955
-    },
-    "bulman-1985": {
-      "doi": "10.1109/t-ed.1985.22295",
-      "title": "The determination of impact ionization coefficients in (100) gallium arsenide using avalanche noise and photocurrent multiplication measurements",
-      "authors": "Bulman, Robbins, Stillman",
-      "journal": "IEEE Transactions on Electron Devices",
-      "year": 1985
-    },
-    "turner-1964": {
-      "doi": "10.1103/physrev.136.a1467",
-      "title": "Exciton Absorption and Emission in InP",
-      "authors": "Turner, Reese, Pettit",
-      "journal": "Physical Review",
-      "year": 1964
-    },
-    "walukiewicz-1980": {
-      "doi": "10.1063/1.327925",
-      "title": "Electron mobility and free-carrier absorption in InP; determination of the compensation ratio",
-      "authors": "Walukiewicz, Lagowski, Jastrzebski, Rava, Lichtensteiger, Gatos, Gatos",
-      "journal": "Journal of Applied Physics",
-      "year": 1980
-    },
-    "cook-1982": {
-      "doi": "10.1063/1.93190",
-      "title": "Electron and hole impact ionization coefficients in InP determined by photomultiplication measurements",
-      "authors": "Cook, Bulman, Stillman",
-      "journal": "Applied Physics Letters",
-      "year": 1982
-    },
-    "panish-casey-1969": {
-      "doi": "10.1063/1.1657024",
-      "title": "Temperature Dependence of the Energy Gap in GaAs and GaP",
-      "authors": "Panish, Casey",
-      "journal": "Journal of Applied Physics",
-      "year": 1969
-    },
-    "prince-1953": {
-      "doi": "10.1103/physrev.92.681",
-      "title": "Drift Mobilities in Semiconductors. I. Germanium",
-      "authors": "Prince",
-      "journal": "Physical Review",
-      "year": 1953
-    },
-    "sturge-1962": {
-      "doi": "10.1103/physrev.127.768",
-      "title": "Optical Absorption of Gallium Arsenide between 0.6 and 2.75 eV",
-      "authors": "Sturge",
-      "journal": "Physical Review",
-      "year": 1962
-    },
-    "blakemore-1982": {
-      "doi": "10.1063/1.331665",
-      "title": "Semiconducting and other major properties of gallium arsenide",
-      "authors": "Blakemore",
-      "journal": "Journal of Applied Physics",
-      "year": 1982
-    },
-    "carlson-1965": {
-      "doi": "10.1063/1.1714018",
-      "title": "Thermal Conductivity of GaAs and GaAs1-xPx Laser Semiconductors",
-      "authors": "Carlson, Slack, Silverman",
-      "journal": "Journal of Applied Physics",
-      "year": 1965
-    },
-    "johnson-eknoyan-1985": {
-      "doi": "10.1063/1.336115",
-      "title": "High-field electron drift velocity measurements in gallium phosphide",
-      "authors": "Johnson, Eknoyan",
-      "journal": "Journal of Applied Physics",
-      "year": 1985
-    },
-    "wu-2002": {
-      "doi": "10.1063/1.1482786",
-      "title": "Unusual properties of the fundamental band gap of InN",
-      "authors": "Wu, Walukiewicz, Yu, Ager, Haller, Lu, Schaff, Saito, Nanishi",
-      "journal": "Applied Physics Letters",
-      "year": 2002
-    },
-    "look-sizelove-2001": {
-      "doi": "10.1063/1.1394954",
-      "title": "Predicted maximum mobility in bulk GaN",
-      "authors": "Look, Sizelove",
-      "journal": "Applied Physics Letters",
-      "year": 2001
-    },
-    "kyle-2014": {
-      "doi": "10.1063/1.4874735",
-      "title": "High-electron-mobility GaN grown on free-standing GaN templates by ammonia-based molecular beam epitaxy",
-      "authors": "Kyle, Kaun, Burke, Wu, Kaun, Speck",
-      "journal": "Journal of Applied Physics",
-      "year": 2014
-    },
-    "horita-2017": {
-      "doi": "10.7567/jjap.56.031001",
-      "title": "Hall-effect measurements of metalorganic vapor-phase epitaxy-grown p-type homoepitaxial GaN layers with various Mg concentrations",
-      "authors": "Horita, Takashima, Tanaka, Matsuyama, Ueno, Edo, Nakamura, Amano, Kachi",
-      "journal": "Japanese Journal of Applied Physics",
-      "year": 2017
-    },
-    "ji-2019": {
-      "doi": "10.1063/1.5099245",
-      "title": "Experimental determination of impact ionization coefficients of electrons and holes in gallium nitride using homojunction structures",
-      "authors": "Ji, Ercan, Chowdhury",
-      "journal": "Applied Physics Letters",
-      "year": 2019
-    },
-    "mion-2006": {
-      "doi": "10.1063/1.2335972",
-      "title": "Accurate dependence of gallium nitride thermal conductivity on dislocation density",
-      "authors": "Mion, Muth, Preble, Hanser",
-      "journal": "Applied Physics Letters",
-      "year": 2006
-    },
-    "inyushkin-2020": {
-      "doi": "10.1134/s0021364020140039",
-      "title": "High Thermal Conductivity of Bulk GaN Single Crystal: An Accurate Experimental Determination",
-      "authors": "Inyushkin, Taldenkov, Chernodubov, Voronenkov, Shreter",
-      "journal": "JETP Letters",
-      "year": 2020
-    },
-    "taniyasu-2006": {
-      "doi": "10.1063/1.2378726",
-      "title": "Increased electron mobility in n-type Si-doped AlN by reducing dislocation density",
-      "authors": "Taniyasu, Kasu, Makimoto",
-      "journal": "Applied Physics Letters",
-      "year": 2006
-    },
-    "wei-2013": {
-      "doi": "10.1063/1.4790134",
-      "title": "Thermal conductivity of 4H-SiC single crystals",
-      "authors": "Wei, Song, Yang, Cui, Peng, Xu, Hu",
-      "journal": "Journal of Applied Physics",
-      "year": 2013
-    },
-    "cassabois-2016": {
-      "doi": "10.1038/nphoton.2015.277",
-      "title": "Hexagonal boron nitride is an indirect bandgap semiconductor",
-      "authors": "Cassabois, Valvin, Gil",
-      "journal": "Nature Photonics",
-      "year": 2016
-    },
-    "hattori-2016": {
-      "doi": "10.1021/acsami.6b06425",
-      "title": "Anisotropic Dielectric Breakdown Strength of Single Crystal Hexagonal Boron Nitride",
-      "authors": "Hattori, Taniguchi, Watanabe, Nagashio",
-      "journal": "ACS Applied Materials & Interfaces",
-      "year": 2016
-    },
-    "yuan-2019": {
-      "doi": "10.1038/s42005-019-0145-5",
-      "title": "Modulating the thermal conductivity in hexagonal boron nitride via controlled boron isotope concentration",
-      "authors": "Yuan, Li, Lindsay, Cherns, Pomeroy, Liu, Edgar, Kuball",
-      "journal": "Communications Physics",
-      "year": 2019
-    },
-    "chrenko-1974": {
-      "doi": "10.1016/0038-1098(74)90978-8",
-      "title": "Ultraviolet and infrared spectra of cubic boron nitride",
-      "authors": "Chrenko",
-      "journal": "Solid State Communications",
-      "year": 1974
-    },
-    "gielisse-1967": {
-      "doi": "10.1103/physrev.155.1039",
-      "title": "Lattice Infrared Spectra of Boron Nitride and Boron Monophosphide",
-      "authors": "Gielisse, Mitra, Plendl, Griffis, Mansur, Marshall, Pascoe",
-      "journal": "Physical Review",
-      "year": 1967
-    },
-    "slack-1973": {
-      "doi": "10.1016/0022-3697(73)90092-9",
-      "title": "Nonmetallic crystals with high thermal conductivity",
-      "authors": "Slack",
-      "journal": "Journal of Physics and Chemistry of Solids",
-      "year": 1973
-    }
-  },
   "materials": [
     {
       "id": "gan",
@@ -1232,11 +795,83 @@
       }
     },
     {
+      "id": "w-bn",
+      "label": "w-BN",
+      "aliases": ["Wurtzite boron nitride", "Gamma boron nitride"],
+      "polytype": "wurtzite",
+      "traced_via": "levinshtein-2001",
+      "chapter_properties": {
+        "source": "levinshtein-2001",
+        "temperature_k": 300,
+        "debye_temperature_k": 1400,
+        "density_g_cm3": 3.48,
+        "static_relative_permittivity": {"perpendicular_c": 6.8, "parallel_c": 5.1},
+        "high_frequency_relative_permittivity": {"range": [4.2, 4.5], "midpoint": 4.35},
+        "effective_electron_mass_m0": {"longitudinal": 0.35, "transverse": 0.24},
+        "effective_hole_mass_m0": {"gamma_to_k": 0.88, "gamma_to_a": 1.08, "gamma_to_m": 1.02},
+        "lattice_constant_angstrom": {"a": 2.55, "c": 4.17},
+        "optical_phonon_energy_mev": 130,
+        "band_gap_ev": {"reported_range": [4.5, 5.5], "midpoint": 5.0},
+        "conduction_band_separation_ev": {"gamma": 8.5, "m": 6.6},
+        "effective_density_of_states_cm3": {"conduction": 1.5e19, "valence": 2.6e19},
+        "infrared_refractive_index": 2.05,
+        "bulk_modulus_gpa": 400,
+        "specific_heat_j_g_c": 0.75,
+        "thermal_expansion_per_c": {"parallel_c": 2.7e-6, "perpendicular_c": 2.3e-6},
+        "elastic_constants_gpa": {"c11": 982, "c12": 134, "c13": 74, "c33": 1077, "c44": 388},
+        "piezoelectric_constants_c_m2": {"e31": 0.27, "e33": -0.85},
+        "acoustic_speed_1e5_cm_s": {"[001]_longitudinal": 17.6, "[001]_transverse": 10.5, "[100]_longitudinal": 16.8},
+        "trace_leads": [
+          {"properties": ["elastic_constants_gpa", "acoustic_speed_1e5_cm_s", "piezoelectric_constants_c_m2"], "references": ["shimada-1998", "kim-1996"], "status": "chapter cites first-principles elastic calculations; not all values are measurements"},
+          {"properties": ["thermal_expansion_per_c"], "references": ["kolupayeva-1986", "yates-1975"], "status": "experimental thermal-expansion leads; inspect the papers for the w-BN phase and direction"},
+          {"properties": ["lattice_constant_angstrom", "density_g_cm3", "bulk_modulus_gpa"], "references": ["solozhenko-1998", "inaba-yoshiasa-1997"], "status": "structural and thermodynamic leads; exact table-to-paper assignment remains to be checked"},
+          {"properties": ["band_gap_ev", "static_relative_permittivity", "high_frequency_relative_permittivity", "effective_electron_mass_m0", "effective_hole_mass_m0"], "references": ["karch-1997", "ferhat-1998", "xu-ching-1991", "christensen-1994"], "status": "calculated electronic-property leads, not direct measurements"}
+        ]
+      },
+      "properties": {}
+    },
+    {
       "id": "c-bn",
       "label": "c-BN",
       "aliases": ["Cubic boron nitride", "Zinc-blende boron nitride"],
       "polytype": "zinc blende",
       "traced_via": "levinshtein-2001",
+      "chapter_properties": {
+        "source": "levinshtein-2001",
+        "temperature_k": 300,
+        "debye_temperature_k": 1700,
+        "density_g_cm3": 3.45,
+        "static_relative_permittivity": 7.1,
+        "high_frequency_relative_permittivity": 4.46,
+        "effective_electron_mass_m0": {"longitudinal": 1.2, "transverse": 0.26},
+        "effective_hole_mass_m0": {"gamma_to_x": 0.55, "gamma_to_l": {"m1": 0.36, "m2": 1.2}},
+        "lattice_constant_angstrom": {"a": 3.615},
+        "optical_phonon_energy_mev": 130,
+        "band_gap_ev": {"reported_range": [6.1, 6.4], "midpoint": 6.25},
+        "conduction_band_separation_ev": {"gamma": [8.5, 10.0], "l": {"lower_bound": 12}},
+        "effective_density_of_states_cm3": {"conduction": 2.1e19, "valence": 2.6e19},
+        "breakdown_field_mv_cm": {"reported_range": [2.0, 6.0], "midpoint": 4.0},
+        "electron_mobility_cm2_v_s": {"upper_bound": 200},
+        "hole_mobility_cm2_v_s": {"upper_bound": 500},
+        "electron_diffusion_cm2_s": {"upper_bound": 5},
+        "hole_diffusion_cm2_s": {"upper_bound": 12},
+        "infrared_refractive_index": 2.1,
+        "bulk_modulus_gpa": 400,
+        "specific_heat_j_g_c": 0.6,
+        "thermal_conductivity_w_cm_k": {"experiment": 7.4, "theory": 13.0},
+        "thermal_expansion_per_c": 1.2e-6,
+        "elastic_constants_gpa": {"c11": 820, "c12": 190, "c44": 480},
+        "acoustic_speed_1e5_cm_s": {"[100]_longitudinal": 15.4, "[100]_transverse": 11.8, "[110]_transverse": 16.9},
+        "trace_leads": [
+          {"properties": ["band_gap_ev"], "references": ["chrenko-1974"], "status": "primary ultraviolet/infrared spectrum; the chapter range is 6.1-6.4 eV"},
+          {"properties": ["thermal_conductivity_w_cm_k"], "references": ["slack-1973"], "status": "primary high-conductivity measurement lead for the 7.4 W/cm K value; the approximately 13 W/cm K entry is theoretical"},
+          {"properties": ["breakdown_field_mv_cm"], "references": ["brozek-1994"], "status": "measured plasma-deposited c-BN layers; not a bulk single-crystal breakdown value"},
+          {"properties": ["electron_mobility_cm2_v_s", "hole_mobility_cm2_v_s", "electron_diffusion_cm2_s", "hole_diffusion_cm2_s"], "references": ["lu-1996"], "status": "electrical thin-film lead; chapter values are upper bounds, not bulk mobility measurements"},
+          {"properties": ["static_relative_permittivity", "high_frequency_relative_permittivity"], "references": ["gielisse-1967", "miyata-1989", "hoffman-1984"], "status": "infrared/optical dielectric leads; the plotted static value already uses the primary Gielisse record"},
+          {"properties": ["elastic_constants_gpa", "acoustic_speed_1e5_cm_s"], "references": ["grimsditch-1994", "shimada-1998", "kim-1996"], "status": "Grimsditch is an elastic-constant measurement; Shimada and Kim are calculation leads"},
+          {"properties": ["thermal_expansion_per_c"], "references": ["slack-bartram-1975", "yates-1975"], "status": "primary thermal-expansion leads"}
+        ]
+      },
       "properties": {
         "band_gap": {
           "value": 6.4,
@@ -1250,6 +885,20 @@
           "aggregation": "single primary observation",
           "observations": [
             {"value": 7.4, "unit": "W/cm\u00b7K", "temperature_k": 300, "polytype": "cubic", "method": "steady-state thermal conductivity of high-thermal-conductivity nonmetallic crystals", "reference": "slack-1973"}
+          ]
+        },
+        "electron_mobility": {
+          "value": 200,
+          "aggregation": "single chapter-traced observation; n-type c-BN at N_D = 6e16 cm^-3, reported from Waters (1995)",
+          "observations": [
+            {"value": 200, "temperature_k": 300, "polytype": "cubic", "method": "n-type mobility at N_D = 6e16 cm^-3; chapter attribution: Waters, NSF Phase II Proposal (1995)", "reference": "levinshtein-2001"}
+          ]
+        },
+        "hole_mobility": {
+          "value": 500,
+          "aggregation": "single chapter-traced upper bound; reported from Waters (1995)",
+          "observations": [
+            {"value": 500, "temperature_k": 300, "polytype": "cubic", "method": "p-type mobility upper bound (<=500 cm^2/V/s); chapter attribution: Waters, NSF Phase II Proposal (1995)", "reference": "levinshtein-2001"}
           ]
         },
         "relative_permittivity": {
@@ -1267,6 +916,34 @@
       "aliases": ["Hexagonal boron nitride", "Boron nitride"],
       "polytype": "hexagonal",
       "traced_via": "levinshtein-2001",
+      "chapter_properties": {
+        "source": "levinshtein-2001",
+        "temperature_k": 300,
+        "debye_temperature_k": 400,
+        "density_g_cm3": {"reported_range": [2.0, 2.28], "midpoint": 2.14},
+        "static_relative_permittivity": {"perpendicular_c": 6.85, "parallel_c": 5.06},
+        "high_frequency_relative_permittivity": {"perpendicular_c": 4.3, "parallel_c": 2.2},
+        "effective_electron_mass_m0": {"m_to_gamma": 0.26, "m_to_l": 2.21},
+        "effective_hole_mass_m0": {"k_to_gamma": 0.47, "m_to_gamma": 0.5, "m_to_l": 1.33},
+        "lattice_constant_angstrom": {"a": [2.5, 2.9], "c": 6.66},
+        "band_gap_ev": {"reported_range": [4.0, 5.8], "midpoint": 4.9},
+        "conduction_band_separation_ev": {"gamma": 9.0, "a": 10.0},
+        "breakdown_field_mv_cm": {"reported_range": [1.0, 3.0], "midpoint": 2.0},
+        "infrared_refractive_index": 1.8,
+        "bulk_modulus_gpa": 36.5,
+        "specific_heat_j_g_c": 0.8,
+        "thermal_conductivity_w_cm_k": {"parallel_c_upper_bound": 0.03, "perpendicular_c_upper_bound": 6.0},
+        "thermal_expansion_per_c": {"parallel_c": 38e-6, "perpendicular_c": -2.7e-6},
+        "elastic_constants_gpa": {"c11": 750, "c12": 150, "c33": {"value": 32, "uncertainty": 3}, "c44": 3},
+        "trace_leads": [
+          {"properties": ["static_relative_permittivity", "high_frequency_relative_permittivity"], "references": ["geick-1966", "zunger-1976"], "status": "Geick is the primary infrared measurement lead; tensor components must remain separate"},
+          {"properties": ["thermal_conductivity_w_cm_k"], "references": ["sichel-1976", "simpson-1971", "duclaux-1992"], "status": "primary thermal-conductivity measurements; chapter entries are directional upper bounds"},
+          {"properties": ["elastic_constants_gpa"], "references": ["green-1976", "duclaux-1992"], "status": "Green is theoretical; Duclaux is an experimental structure/thermal-conductivity lead"},
+          {"properties": ["thermal_expansion_per_c", "density_g_cm3", "lattice_constant_angstrom", "bulk_modulus_gpa"], "references": ["yates-1975", "inaba-yoshiasa-1997", "solozhenko-peun-1997"], "status": "primary structural and thermal-property leads; verify direction and temperature before plotting"},
+          {"properties": ["band_gap_ev", "effective_electron_mass_m0", "effective_hole_mass_m0", "conduction_band_separation_ev"], "references": ["zunger-1976", "xu-ching-1991", "christensen-1994"], "status": "optical/theoretical leads; the plotted bandgap uses the later primary Cassabois measurement"},
+          {"properties": ["breakdown_field_mv_cm"], "references": [], "status": "no chapter bibliography DOI identified; do not promote the 1-3 MV/cm range to the plotted primary dataset"}
+        ]
+      },
       "properties": {
         "band_gap": {
           "value": 5.955,

@@ -8,8 +8,12 @@ const state = {
 };
 
 async function init() {
-  const response = await fetch("../json_table/materials.json");
-  state.data = await response.json();
+  const [materialsResponse, referencesResponse] = await Promise.all([
+    fetch("../json_table/materials.json"),
+    fetch("../json_table/references.json"),
+  ]);
+  state.data = await materialsResponse.json();
+  state.data.references = await referencesResponse.json();
 
   state.data.materials.forEach(material => {
     if (material.color) state.colors[material.id] = material.color;
@@ -442,10 +446,9 @@ function axisNote(property) {
   return [property.note, property.tick_note].filter(Boolean).join(" ");
 }
 
-// An observation is "simulated" when the number comes out of a calculation
-// (Monte Carlo, first principles) rather than a measurement on a real crystal.
-function isSimulated(observation) {
-  return observation.simulated === true;
+// Calculated estimates and simulations are visually distinct from measurements.
+function isCalculated(observation) {
+  return observation.calculated === true || observation.simulated === true;
 }
 
 function renderTable() {
@@ -468,9 +471,9 @@ function renderTable() {
       const entry = material.properties[axisId];
       if (!entry || typeof entry.value !== "number") return `<td class="missing">&mdash;</td>`;
       const refs = [...new Set(entry.observations.map(o => o.reference))].map(cite).join("");
-      const simulated = entry.observations.filter(o => o.in_mean !== false).some(isSimulated);
-      if (simulated) anySimulated = true;
-      const star = simulated ? `<span class="simmark" title="From simulation, not measurement">*</span>` : "";
+      const calculated = entry.observations.filter(o => o.in_mean !== false).some(isCalculated);
+      if (calculated) anySimulated = true;
+      const star = calculated ? `<span class="simmark" title="Calculated or simulated, not directly measured">*</span>` : "";
       return `<td>${entry.value}${star}${refs}</td>`;
     }).join("");
     const mark = axisNote(property) ? ` <span class="notemark">&dagger;</span>` : "";
@@ -485,8 +488,8 @@ function renderTable() {
     .map(property => `<p><span class="notemark">&dagger;</span> <b>${property.name}.</b> ${escapeHtml(axisNote(property))}</p>`)
     .join("");
   const simNote = anySimulated
-    ? `<p><span class="simmark">*</span> <b>Simulated value.</b> Calculated (Monte Carlo or first principles), ` +
-      `not measured on a crystal. Used only where no primary measurement could be traced.</p>`
+    ? `<p><span class="simmark">*</span> <b>Calculated or simulated value.</b> Derived from measured coefficients, ` +
+      `an empirical model, Monte Carlo, or first-principles calculations rather than directly measured.</p>`
     : "";
   document.getElementById("axisnotes").innerHTML =
     notes || simNote ? `<h3>How to read these numbers</h3>${notes}${simNote}` : "";
